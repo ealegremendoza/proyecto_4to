@@ -1,0 +1,3 @@
+http://www.circuitstoday.com/interfacing-accelerometer-to-arduino
+
+codigo de prueba acc con arduino por i2c
