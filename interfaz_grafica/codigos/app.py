@@ -6,18 +6,12 @@
 """
 import sys
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-#from myclass_dsp import *
-from MyApp import *
-
-
-
+from PyQt5 import QtWidgets
+from MyGui import ventana_princ
 
 
 if __name__ == "__main__":
 	app = QtWidgets.QApplication(sys.argv)
-	window = MyApp_class()
+	window = ventana_princ()
 	window.show()
 	sys.exit(app.exec_())

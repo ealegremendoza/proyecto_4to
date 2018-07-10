@@ -16,4 +16,9 @@ Se uso python 3
 Se uso PyQt5
 
 
+Para convertirr *.ui a *.py hacer lo siguiente:
+abrir terminal en el directorio donde esta el archivo *.ui
+correr:
+pyuic5 test.ui -o test_ui.py
+
 
