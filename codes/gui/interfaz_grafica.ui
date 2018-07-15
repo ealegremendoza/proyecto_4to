@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>437</width>
+    <height>443</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Proyecto 4to</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_20">
+      <property name="text">
+       <string>Archivo cargado:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="5">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_19">
+      <property name="text">
+       <string>Dirección:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="pushButton_cargarDir">
+      <property name="text">
+       <string>Cargar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLineEdit" name="lineEdit_direccion"/>
+    </item>
+    <item row="0" column="0" colspan="5">
+     <widget class="QLabel" name="label_18">
+      <property name="text">
+       <string>Importe su archivo *.csv con los datos del acelerómetro y/o GPS aquí.</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="label_nombreArchivoCSV">
+      <property name="text">
+       <string>&lt;archivo.csv&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QPushButton" name="pushButton_examDir">
+      <property name="text">
+       <string>Examinar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="5">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Valores Medios</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_CargarLabelsMedias">
+          <property name="text">
+           <string>Cargar </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="pushButton_LimparLabelsMedias">
+          <property name="text">
+           <string>Limpiar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox_gps">
+          <property name="title">
+           <string>GPS</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>Posición [m]:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Dato 2:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Dato 3:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>Dato 4:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_gps_PosicionMedia">
+             <property name="text">
+              <string>&lt;data&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_gps_dato2">
+             <property name="text">
+              <string>&lt;data&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_gps_dato3">
+             <property name="text">
+              <string>&lt;data&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_gps_dato4">
+             <property name="text">
+              <string>&lt;data&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox_acc">
+          <property name="title">
+           <string>Acelerómetro</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Aceleración [m/s&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;]:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Posición [m]:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Velocidad [m/s]:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_acc_AceleracionMedia">
+             <property name="text">
+              <string>&lt;data&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_acc_PosicionMedia">
+             <property name="text">
+              <string>&lt;data&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_acc_VelocidadMedia">
+             <property name="text">
+              <string>&lt;data&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Gráficas</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>Velocidad vs tiempo.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Posición vs tiempo.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButton_Graficar_PosVsTiempo">
+          <property name="text">
+           <string>Graficar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Aceleración vs tiempo.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="pushButton_Graficar_VelVsTiempo">
+          <property name="text">
+           <string>Graficar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="pushButton_Graficar_AccVsTiempo">
+          <property name="text">
+           <string>Graficar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QLabel" name="label_22">
+          <property name="text">
+           <string>Nota: La variable tiempo se refiere al tiempo de ejecución.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Nota a programador: por ahora solo ploteo los datos del ACC.</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>437</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionImportar_CSV"/>
+    <addaction name="actionExportar_Datos"/>
+    <addaction name="separator"/>
+    <addaction name="actionExportar_Graficas"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuConectar">
+    <property name="title">
+     <string>Conectar</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuVer">
+    <property name="title">
+     <string>Ver</string>
+    </property>
+    <addaction name="actionTamanio_Completo"/>
+    <addaction name="actionMinimizar"/>
+    <addaction name="separator"/>
+    <addaction name="actionConfiguracion"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <widget class="QMenu" name="menuAcerca_del_proyecto">
+     <property name="title">
+      <string>Acerca del proyecto</string>
+     </property>
+     <addaction name="actionIdea_Fuerza"/>
+     <addaction name="actionInforme"/>
+     <addaction name="actionIr_carpeta_fuente"/>
+     <addaction name="separator"/>
+     <addaction name="actionNotas"/>
+    </widget>
+    <widget class="QMenu" name="menuManuales">
+     <property name="title">
+      <string>Manuales</string>
+     </property>
+     <addaction name="actionManual_de_app"/>
+     <addaction name="separator"/>
+     <addaction name="actionManual_de_usuario"/>
+     <addaction name="actionManual_tecnico"/>
+    </widget>
+    <addaction name="actionFormato_del_CSV"/>
+    <addaction name="separator"/>
+    <addaction name="menuManuales"/>
+    <addaction name="separator"/>
+    <addaction name="menuAcerca_del_proyecto"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuConectar"/>
+   <addaction name="menuVer"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionExportar_Datos">
+   <property name="text">
+    <string>Exportar Datos</string>
+   </property>
+  </action>
+  <action name="actionImportar_CSV">
+   <property name="text">
+    <string>Importar CSV</string>
+   </property>
+  </action>
+  <action name="actionMinimizar">
+   <property name="text">
+    <string>Minimizar</string>
+   </property>
+  </action>
+  <action name="actionTamanio_Completo">
+   <property name="text">
+    <string>Tamaño Completo</string>
+   </property>
+  </action>
+  <action name="actionExportar_Graficas">
+   <property name="text">
+    <string>Exportar </string>
+   </property>
+  </action>
+  <action name="actionIr_a_carpeta_fuente">
+   <property name="text">
+    <string>Ir a carpeta fuente</string>
+   </property>
+  </action>
+  <action name="actionManual_de_usuario">
+   <property name="text">
+    <string>Manual de usuario</string>
+   </property>
+  </action>
+  <action name="actionIdea_Fuerza">
+   <property name="text">
+    <string>Idea Fuerza</string>
+   </property>
+  </action>
+  <action name="actionInforme">
+   <property name="text">
+    <string>Informe</string>
+   </property>
+  </action>
+  <action name="actionIr_carpeta_fuente">
+   <property name="text">
+    <string>Ir a carpeta fuente</string>
+   </property>
+  </action>
+  <action name="actionNotas">
+   <property name="text">
+    <string>Notas</string>
+   </property>
+  </action>
+  <action name="actionManual_tecnico">
+   <property name="text">
+    <string>Manual tecnico</string>
+   </property>
+  </action>
+  <action name="actionManual_de_app">
+   <property name="text">
+    <string>Manual de app</string>
+   </property>
+  </action>
+  <action name="actionConfiguracion">
+   <property name="text">
+    <string>Configuración</string>
+   </property>
+  </action>
+  <action name="actionEjemplo_de_formato_csv">
+   <property name="text">
+    <string>Ejemplo de formato .csv</string>
+   </property>
+  </action>
+  <action name="actionFormato_del_CSV">
+   <property name="text">
+    <string>Formato del CSV</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
