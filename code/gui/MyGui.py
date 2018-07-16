@@ -10,7 +10,7 @@ from PyQt5 import  QtWidgets
 
 import pandas as pd #para archivos csv
 
-from dsp.DSP import myDSP
+from dsp.DSP import DSP
 
 import matplotlib.pyplot as plt
 
@@ -127,9 +127,9 @@ class ventana_princ(QtWidgets.QMainWindow):
         accy=accx
         accz=accx
         freq= 1  #modificar mas adelante esto xq taka tiene una version mejor
-        signalx = myDSP(accx,freq);
-        signaly = myDSP(accy,freq);
-        signalz = myDSP(accz,freq);
+        signalx = DSP(accx,freq);
+        signaly = DSP(accy,freq);
+        signalz = DSP(accz,freq);
         
         posx = signalx.integrate2();
         posy = signaly.integrate2();
@@ -165,9 +165,9 @@ class ventana_princ(QtWidgets.QMainWindow):
         accy=accx
         accz=accx
         freq= 1  #modificar mas adelante esto xq taka tiene una version mejor
-        signalx = myDSP(accx,freq);
-        signaly = myDSP(accy,freq);
-        signalz = myDSP(accz,freq);
+        signalx = DSP(accx,freq);
+        signaly = DSP(accy,freq);
+        signalz = DSP(accz,freq);
         
         velx = signalx.integrate();
         vely = signaly.integrate();
