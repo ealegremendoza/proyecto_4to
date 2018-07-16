@@ -4,17 +4,18 @@
 """
 @author: eze
 """
-
-from interfaz_grafica_ui import  Ui_mainWindow
+#------------------------------------------------------------------------------
+from .interfaz_grafica_ui import  Ui_mainWindow
 from PyQt5 import  QtWidgets
 
 import pandas as pd #para archivos csv
 
-from ..dsp.myclass_dsp import DSP  #para filtrado de señal
-#from numpy import full #para DSP
+from dsp.DSP import myDSP
 
 import matplotlib.pyplot as plt
 
+
+#------------------------------------------------------------------------------
 class ventana_princ(QtWidgets.QMainWindow):
     def __init__(self,parent=None):
         super().__init__()
@@ -24,8 +25,10 @@ class ventana_princ(QtWidgets.QMainWindow):
         self.button_cfg()
 
     def button_cfg(self):
-        self.ui.pushButton_CargarLabelsMedias.clicked.connect(self.cargar_datos_media)
-        self.ui.pushButton_LimparLabelsMedias.clicked.connect(self.vaciar_campos)
+        self.ui.pushButton_CargarLabelsMedias.clicked.connect(
+                self.cargar_datos_media)
+        self.ui.pushButton_LimparLabelsMedias.clicked.connect(
+                self.vaciar_campos)
         self.ui.pushButton_examDir.clicked.connect(self.getCSV_window)
         self.ui.pushButton_cargarDir.clicked.connect(self.getCSV_path)
         self.ui.pushButton_Graficar_AccVsTiempo.clicked.connect(self.plot_acc)
@@ -52,7 +55,8 @@ class ventana_princ(QtWidgets.QMainWindow):
         self.ui.label_gps_dato4.setText("")
 
     def getCSV_window(self):
-        filePath, _ = QtWidgets.QFileDialog.getOpenFileName(self, 'Open file', '/home')
+        filePath, _ = QtWidgets.QFileDialog.getOpenFileName(
+                self, 'Open file', '/home')
         if filePath != "":
             print ("Dirección",filePath) #Opcional imprimir la dirección del archivo
             self.df = pd.read_csv(str(filePath))
@@ -62,6 +66,8 @@ class ventana_princ(QtWidgets.QMainWindow):
                 if filePath[-i]=='/': break
             fileName = filePath[(-(i-1))::]
             self.ui.label_nombreArchivoCSV.setText(fileName)
+            self.ui.label_nombreArchivoCSV.setStyleSheet('color: green')
+            self.ui.lineEdit_direccion.setText(filePath)
     
     # TODO: hacer una funcion que se llama getFileName y que reciva filePath
         
@@ -76,6 +82,7 @@ class ventana_princ(QtWidgets.QMainWindow):
                 if filePath[-i]=='/': break
             fileName = filePath[(-(i-1))::]
             self.ui.label_nombreArchivoCSV.setText(fileName)
+            
         #plotear desde archivo CSV
     def plot_acc (self):
         t=self.df['col1']
@@ -120,10 +127,9 @@ class ventana_princ(QtWidgets.QMainWindow):
         accy=accx
         accz=accx
         freq= 1  #modificar mas adelante esto xq taka tiene una version mejor
-        #TODO necesito una manera de contabilizar los datos.
-        signalx = DSP(accx,len(accx),freq);
-        signaly = DSP(accx,len(accy),freq);
-        signalz = DSP(accx,len(accz),freq);
+        signalx = myDSP(accx,freq);
+        signaly = myDSP(accy,freq);
+        signalz = myDSP(accz,freq);
         
         posx = signalx.integrate2();
         posy = signaly.integrate2();
@@ -151,7 +157,6 @@ class ventana_princ(QtWidgets.QMainWindow):
         pz.set_ylabel('Posición Z (m)')
         pz.plot(t,posz)
 
-
         plt.show()
 
     def plot_vel(self):
@@ -160,10 +165,9 @@ class ventana_princ(QtWidgets.QMainWindow):
         accy=accx
         accz=accx
         freq= 1  #modificar mas adelante esto xq taka tiene una version mejor
-        #TODO necesito una manera de contabilizar los datos.
-        signalx = DSP(accx,len(accx),freq);
-        signaly = DSP(accx,len(accy),freq);
-        signalz = DSP(accx,len(accz),freq);
+        signalx = myDSP(accx,freq);
+        signaly = myDSP(accy,freq);
+        signalz = myDSP(accz,freq);
         
         velx = signalx.integrate();
         vely = signaly.integrate();
@@ -191,8 +195,16 @@ class ventana_princ(QtWidgets.QMainWindow):
         pz.set_ylabel('Velocidad Z (m/2)')
         pz.plot(t,velz)
 
-
         plt.show()
     # TODO: hacer una funcion que se llama getFileName y que reciva filePath
+    """
+    TODO: hacer una clase que se dedique a plotear.
+    Seria util que reciba por una variable qué boton fue presionado, q reciba
+    la accelaracion tmb.
+    Esto ayudaria a emprolijar el código.
     
-        
+    """
+    
+#------------------------------------------------------------------------------
+# FIN DE CODIGO
+#------------------------------------------------------------------------------
