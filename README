@@ -1,6 +1,7 @@
 Este repositorio contiene gran parte del proyecto de cuarto año a de la carrera de Ingeniería Electrónica de la UTN-FRBA.
 
-Breve descripción de las carptas ----------------------------------------------------------------------------------------
+Breve descripción de las carptas 
+---------------------------------------------------------------------------------------------
 En la carpeta "docs" se encuentra toda documentación relacionada al proyecto.
 En la carpeta "csv" se encuentran los archivos *.csv para la aplicación.
 
@@ -10,7 +11,9 @@ En la carpeta "code/gui" se encuentran las clases relacionadas a la interfaz gr�
 
 En la carpeta "lpc_info" se encontrará información útil sobre el microcontrolador utilizado.
 
--------------------------------------------------------------------------------------------------------------------------
+
+NOTAS IMPORTANTES
+---------------------------------------------------------------------------------------------
 
 - La interfaz gráfica de este proyecto es realizada en código Python 3.6.5., bajo la plataforma ANACONDA3.
 - Hoy en día el código funciona en un SO Ubuntu 16.04 LTS.
@@ -25,5 +28,5 @@ En la carpeta "lpc_info" se encontrará información útil sobre el microcontrol
 	Desde SPYDER:
 		Abrir el archivo app.py que se encuentra en el directorio code.
 		Presionar F5.
-
+---------------------------------------------------------------------------------------------
 		
