@@ -65,6 +65,26 @@ class DSP:
         if replace:
             self.signal = output
         return output;
+    # lowpass10:
+    #   genera unn filtro de media movil orden 10
+    def lowpass10 (self,replace= False):
+        output =  np.full((self.samples,1),0.1);
+        aux = self.signal
+        output[0] = aux[0]
+        output[1] = (aux[1]+aux[0])/2
+        output[2] = (aux[2]+aux[1]+aux[0])/3
+        output[3] = (aux[3]+aux[2]+aux[1]+aux[0])/4
+        output[4] = (aux[4]+aux[3]+aux[2]+aux[1]+aux[0])/5
+        output[5] = (aux[5]+aux[4]+aux[3]+aux[2]+aux[1]+aux[0])/6
+        output[6] = (aux[6]+aux[5]+aux[4]+aux[3]+aux[2]+aux[1]+aux[0])/7
+        output[7] = (aux[7]+aux[6]+aux[5]+aux[4]+aux[3]+aux[2]+aux[1]+aux[0])/8
+        output[8] = (aux[8]+aux[7]+aux[6]+aux[5]+aux[4]+aux[3]+aux[2]+aux[1]+aux[0])/9        
+        
+        for i in range (9 , self.samples):
+            output[i] = (aux[i]+aux[i-1]+aux[i-2]+aux[i-3]+aux[i-4]+aux[i-5]+aux[i-6]+aux[i-7]+aux[i-8]+aux[i-9])/10
+        if replace:
+            self.signal = output
+        return output;
     # amend: 
     #    input:
     #       sample_size: the amount of samples the method takes to generate
