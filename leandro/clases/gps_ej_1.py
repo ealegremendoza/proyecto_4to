@@ -12,7 +12,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from DSP import DSP
 
-data=np.genfromtxt("G:\gps\gps1.csv",delimiter=';')
+#para que ande en la compu de eze
+data=np.genfromtxt("/home/eze/Escritorio/eze_ub/UTN-FRBA_UBUNTU/4to_nivel/proyecto_4to/leandro/clases/gps1.csv",delimiter=';')
+
+#para que ande en la compu de leandro
+#data=np.genfromtxt("G:\gps\gps1.csv",delimiter=';')
 latitude = data[1:,0]
 longitude = data[1:,1]
 
