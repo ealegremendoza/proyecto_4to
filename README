@@ -9,6 +9,8 @@ En la carpeta "code" se encuentra todo código relacionado al proyecto.
 En la carpeta "code/dsp" se encuentran las clases para el procesamiento de señales.
 En la carpeta "code/gui" se encuentran las clases relacionadas a la interfaz gráfica de la aplicación.
 
+En la carpeta "pcb" se encuentra todos los archivos KiCad relacionados al diseño del PCB.
+
 En la carpeta "lpc_info" se encontrará información útil sobre el microcontrolador utilizado.
 
 
