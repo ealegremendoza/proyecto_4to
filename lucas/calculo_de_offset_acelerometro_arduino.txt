@@ -1,0 +1,120 @@
+typedef struct Coordinates
+{
+
+  int16_t X;
+  int16_t Y;
+  int16_t Z;
+
+}coor_t;
+
+typedef struct Accelometer
+{
+  coor_t coor;
+  coor_t offset;
+}Acc_t;
+
+#define sVAL_x  1
+#define sVAL_y  1
+#define sVAL_z  1
+
+#define eVAL_x  1
+#define eVAL_y  1
+#define eVAL_z  1
+
+
+
+volatile Acc_t Acc,Acc_I2C;
+int8_t state=CALIB_ACC;
+volatile uint8_t FlagAcc=0;
+
+
+int calibrate( int preccision, int Device) //esto despues va en phython con precision de pto flotante.
+{
+  static int16_t n_Acc=0;//cuento la cantidad de muestras del acelerometro
+  static int16_t n_gps=0;//cuento la cantidad de muestras del GPS
+
+  int result=-2; //lo inicializo en un valor no esperado
+
+  if(Device == ACC) //si estoy calibrando el acelerometro
+  {
+      if(FlagAcc)//FlagAcc=1 tengo una nueva muestra del acelerometro, en el caso del arduino me avisa un timer en python el (scoket?)
+      {
+        ACC_DATA(); //acc_data: es una promitiva que asigna el valor de la aceleracion en la estructura acc.coor, la forma de leerlo es Acc.coor.x(valor de la cordenada en x que obtenemos del acelerometro)
+
+        Acc.coor.X=Acc.coor.X>>14; //divido por 16384 para tener un valor real en g's, si no hago esta division las muestras que tengo estan expresadas en enteros de 16 bits(hoja de datos)
+        Acc.coor.Y=Acc.coor.Y>>14;
+        Acc.coor.Z=Acc.coor.Z>>14;
+
+        //Ventana de discriminacion va aqui(sin imoplementar) //no note mucha diferencia porque no tengo la presicion de pto flotante: copiar la ventana del papper de freescale
+
+        Acc.offset.X= Acc.offset.X + Acc.coor.X;  //acumulo los valores de las muestras
+        Acc.offset.Y= Acc.offset.Y + Acc.coor.Y;
+        Acc.offset.Z= Acc.offset.Z + Acc.coor.Z;
+
+        n_Acc++; //espero a tener un numero de muestras lo suficientemente representativo
+        FlagAcc=0; //reseteo el flag para evitar sumar al offset la misma muestra,hasta que no entre una nueva muestra no hago nada //nota, las estructuras aca las uso como variables globales, por eso mantienen su valor
+      }
+
+    if(n_Acc==(1024*preccision)) //llegue a un multiplo de 1024 muestras
+    {
+      //realizo un promedio para determinar el offset(recordar que el promedio es la suma de todas las muestras mientras el sujeto ESTA LO MAS QUIETO POSIBLE dividio la cantidad de las misas)
+      Acc.offset.X = Acc.offset.X >>(9+preccision); //DIVIDO POR un multiplo de 1024
+      Acc.offset.Y = Acc.offset.Y >>(9+preccision);
+      Acc.offset.Z = Acc.offset.Z >>(9+preccision);
+
+    //verifico que el offset cumpla con la exigencia del datasheet(sVAL_X son los (0,0,1)g  que dice la hoja de datos cuando el acc esta quieto y eVAL_y es el error admisible que sugiere el fabricante 50 mG)
+      
+	if(Acc.offset.X >(sVAL_x + eVAL_x) || Acc.offset.X <(sVAL_x - eVAL_x)) //doy una cota de error al valor en resposo de la posicion del acc RV
+        
+	return CALIB_NOT_OK; //no se cumple la exigencia, descarto la calibracion(Acc.offset.x=NOT_CALIB) y aumento la precision
+      else
+        result=CALIB_OK;
+
+      if(Acc.offset.Y >(sVAL_y + eVAL_y) || Acc.offset.Y <(sVAL_y - eVAL_y))
+        return CALIB_NOT_OK;
+      else
+        result=CALIB_OK;
+
+      if(Acc.offset.Z >(sVAL_z + eVAL_z) || Acc.offset.Z <(sVAL_z - eVAL_z))
+        return CALIB_NOT_OK;
+      else
+        result=CALIB_OK;
+    }
+    else
+      return CALIB_NOT_FINISH; //no alcanze la cantidad de muestras minimas, informo que la calibracion no finalizo 
+  }
+
+ return result;
+}
+//explicacion del error: supongamos que el acelerometro se coloca de forma vertical a una superficie normal.
+esto implica que la unica aceleracion actuante sobre el mismo es la de la aceleracion de la gravedad, es la direccion -z
+por lo que la lectura en ese estado deberia ser de acx=0 acy=0 acz=-1g (estos son los valores de sVAL_x,VAL_y,sVAL_z, son macros)
+
+y el fabricante me da un error de 50mg por lo que el valor de la muestra debe estar comprendido en ese valor (TIPO B DOMINANTE)
+(estos son los valores de eVAL_x,eAL_y,eVAL_z, son macros).
+
+en el caso de que no se cumpla,principalemnte por el movimiento del jugador cuando esta en reposo, se aumenta la cota de error POR ENCIMA de lo que sugiere el fabricante.
+
+//ejemplo de aplicacion.(llevar esta forma a python)
+
+//	void loop{
+//  static int i=0;
+//  switch(state)
+//  {
+//    case CALIB_ACC:
+//    if(calibrate(1+i,ACC)==CALIB_OK){ //termino la calibracion y ya tengo en la estructura ACC.coor.offset el valor de continua que voy a remover, para removerlo a la muestra actual le resto el offset 
+//    state=NEXT_STATE; //paso a recibir muestras del acelerometro y las tratare, en este punto hay que informar que el experimeto ya comenzo y el jugador puede comenzar a moverse(previo a a aver asegurado la conexion)
+//    i=0;
+//    }
+//    else if(calibrate(1+i,ACC)==CALIB_NOT_OK) //termino la calibracion pero la precision no cumple con la exigencia, aumento la presicion(mas muestras)
+//    {
+//      state=CALIB_ACC;
+//      i++;
+//      i%=CAL_MAX; //numero maximo de iteraciones que se necesita para realizar la calibracion
+//    }
+//    break;
+//  }
+// }
+
+  
+//}
