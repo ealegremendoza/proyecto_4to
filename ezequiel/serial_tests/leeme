@@ -1,0 +1,6 @@
+#USO
+0) Conectar arduino a la pc.
+1) abrir arduino IDE y bajar el archivo *.ino
+2) en una consola o en spyder correr el codigo *.py
+
+#NOTA:Se deben contar con permisos para acceder al puerto serie.
