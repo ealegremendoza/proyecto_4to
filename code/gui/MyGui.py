@@ -97,27 +97,28 @@ class ventana_princ(QtWidgets.QMainWindow):
        # pos = signal.integrate2();
         
         fig = plt.figure()
-        fig.suptitle('Sujeto #1', fontsize=14, fontweight='bold')
+        fig.suptitle('Sujeto #1 - Aceleración', fontsize=14, fontweight='bold')
         
                      
         ax = fig.add_subplot(311)
         fig.subplots_adjust(top=0.85)
-        ax.set_xlabel('t')
-        ax.set_ylabel('Aceleracion X (G)')
+        #ax.set_xlabel('tiempo [ms]')
+        ax.set_ylabel('X [G]')
         ax.plot(t,accx)
         
         ay = fig.add_subplot(312)
         fig.subplots_adjust(top=0.85)
-        ay.set_xlabel('t')
-        ay.set_ylabel('Aceleracion Y (G)')
+        #ay.set_xlabel('tiempo [ms]')
+        ay.set_ylabel('Y [G]')
         ay.plot(t,accy)
         
         az = fig.add_subplot(313)
         fig.subplots_adjust(top=0.85)
-        az.set_xlabel('t')
-        az.set_ylabel('Aceleracion Z (G)')
+        az.set_xlabel('tiempo [ms]')
+        az.set_ylabel('Z [G]')
         az.plot(t,accz)
-
+        
+        fig.subplots_adjust(hspace=0.04)
 
         plt.show()
     
@@ -126,36 +127,38 @@ class ventana_princ(QtWidgets.QMainWindow):
         accx=self.df['col2']
         accy=accx
         accz=accx
-        freq= 1  #modificar mas adelante esto xq taka tiene una version mejor
-        signalx = DSP(accx,freq);
-        signaly = DSP(accy,freq);
-        signalz = DSP(accz,freq);
+
+        signalx = DSP(accx);
+        signaly = DSP(accy);
+        signalz = DSP(accz);
         
         posx = signalx.integrate2();
         posy = signaly.integrate2();
         posz = signalz.integrate2();
         
         fig = plt.figure()
-        fig.suptitle('Sujeto #1', fontsize=14, fontweight='bold')
+        fig.suptitle('Sujeto #1 - Posición', fontsize=14, fontweight='bold')
         
                      
         px = fig.add_subplot(311)
         fig.subplots_adjust(top=0.85)
-        px.set_xlabel('t')
-        px.set_ylabel('Posición X (m)')
+        #px.set_xlabel('tiempo [ms]')
+        px.set_ylabel('X [m]')
         px.plot(t,posx)
         
         py = fig.add_subplot(312)
         fig.subplots_adjust(top=0.85)
-        py.set_xlabel('t')
-        py.set_ylabel('Posición Y (m)')
+        #py.set_xlabel('tiempo [ms]')
+        py.set_ylabel('Y [m]')
         py.plot(t,posy)
-        
+       
         pz = fig.add_subplot(313)
         fig.subplots_adjust(top=0.85)
-        pz.set_xlabel('t')
-        pz.set_ylabel('Posición Z (m)')
+        pz.set_xlabel('tiempo [ms]')
+        pz.set_ylabel('Z [m]')
         pz.plot(t,posz)
+        
+        fig.subplots_adjust(hspace=0.04)
 
         plt.show()
 
@@ -164,36 +167,37 @@ class ventana_princ(QtWidgets.QMainWindow):
         accx=self.df['col2']
         accy=accx
         accz=accx
-        freq= 1  #modificar mas adelante esto xq taka tiene una version mejor
-        signalx = DSP(accx,freq);
-        signaly = DSP(accy,freq);
-        signalz = DSP(accz,freq);
+
+        signalx = DSP(accx);
+        signaly = DSP(accy);
+        signalz = DSP(accz);
         
         velx = signalx.integrate();
         vely = signaly.integrate();
         velz = signalz.integrate();
         
         fig = plt.figure()
-        fig.suptitle('Sujeto #1', fontsize=14, fontweight='bold')
+        fig.suptitle('Sujeto #1 - Velocidad', fontsize=14, fontweight='bold')
         
                      
         px = fig.add_subplot(311)
         fig.subplots_adjust(top=0.85)
-        px.set_xlabel('t')
+        #px.set_xlabel('tiempo [ms]')
         px.set_ylabel('Velocidad X (m/2)')
         px.plot(t,velx)
         
         py = fig.add_subplot(312)
         fig.subplots_adjust(top=0.85)
-        py.set_xlabel('t')
+        #py.set_xlabel('tiempo [ms]')
         py.set_ylabel('Velocidad Y (m/2)')
         py.plot(t,vely)
         
         pz = fig.add_subplot(313)
         fig.subplots_adjust(top=0.85)
-        pz.set_xlabel('t')
+        pz.set_xlabel('tiempo [ms]')
         pz.set_ylabel('Velocidad Z (m/2)')
         pz.plot(t,velz)
+        fig.subplots_adjust(hspace=0.04)
 
         plt.show()
     # TODO: hacer una funcion que se llama getFileName y que reciva filePath
