@@ -7,4 +7,5 @@
   (lib (name lpcxpresso_lpc1769_revd)(type Legacy)(uri ${KIPRJMOD}/symbols/lpcxpresso_lpc1769/lpcxpresso_lpc1769_revd.lib)(options "")(descr ""))
   (lib (name lm2940)(type Legacy)(uri "G:/Mis documentos/Trabajos de Leandro/Materias_Leandro/proyecto/proyecto/symbols/regulador/lm2940.lib")(options "")(descr ""))
   (lib (name aic1117)(type Legacy)(uri "G:/Mis documentos/Trabajos de Leandro/Materias_Leandro/proyecto/proyecto/symbols/regulador/aic1117.lib")(options "")(descr ""))
+  (lib (name lm2575)(type Legacy)(uri "G:/Mis documentos/Trabajos de Leandro/Materias_Leandro/proyecto/proyecto/symbols/regulador/lm2575.lib")(options "")(descr ""))
 )

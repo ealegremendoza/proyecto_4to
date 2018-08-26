@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 9 9
 Title ""
 Date ""
 Rev ""
@@ -60,14 +60,6 @@ Wire Wire Line
 	3600 3700 3950 3700
 Wire Wire Line
 	3950 3800 3600 3800
-Text HLabel 6850 2600 2    50   Input ~ 0
-RXD2
-Text HLabel 6850 2500 2    50   Output ~ 0
-TXD2
-Wire Wire Line
-	6350 2500 6850 2500
-Wire Wire Line
-	6850 2600 6350 2600
 Wire Wire Line
 	3950 2000 3650 2000
 Wire Wire Line
@@ -106,15 +98,10 @@ NoConn ~ 6350 3800
 NoConn ~ 6350 3700
 NoConn ~ 6350 3600
 NoConn ~ 6350 3500
-NoConn ~ 6350 3400
 NoConn ~ 6350 3300
 NoConn ~ 6350 3200
 NoConn ~ 6350 3100
 NoConn ~ 6350 3000
-NoConn ~ 6350 2900
-NoConn ~ 6350 2800
-NoConn ~ 6350 2700
-NoConn ~ 6350 2400
 NoConn ~ 6350 2300
 NoConn ~ 6350 2200
 NoConn ~ 6350 2100
@@ -167,4 +154,26 @@ Text HLabel 3650 2300 0    50   Input ~ 0
 DIR
 Wire Wire Line
 	3650 2300 3950 2300
+Wire Wire Line
+	6350 2400 6850 2400
+Text HLabel 6850 2400 2    50   Input ~ 0
+CAP2.1
+NoConn ~ 6350 2500
+NoConn ~ 6350 2600
+Wire Wire Line
+	6350 2700 6850 2700
+Wire Wire Line
+	6350 2800 6850 2800
+Wire Wire Line
+	6350 2900 6850 2900
+Wire Wire Line
+	6350 3400 6850 3400
+Text HLabel 6850 2700 2    50   Output ~ 0
+TXD1
+Text HLabel 6850 2800 2    50   Input ~ 0
+RXD1
+Text HLabel 6850 2900 2    50   Input ~ 0
+CTS1
+Text HLabel 6850 3400 2    50   Output ~ 0
+RTS1
 $EndSCHEMATC
