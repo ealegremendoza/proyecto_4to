@@ -83,22 +83,8 @@ F 3 "" H 5000 3650 50  0001 C CNN
 	1    5000 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 3600 5550 3600
-Wire Wire Line
-	5750 3700 5550 3700
-Wire Wire Line
-	5750 4100 5550 4100
 NoConn ~ 5750 3800
 NoConn ~ 5750 3900
-Wire Wire Line
-	5750 3400 5550 3400
-Wire Wire Line
-	5550 3400 5550 3200
-Wire Wire Line
-	5750 3500 5000 3500
-Wire Wire Line
-	5000 3500 5000 3650
 $Comp
 L R R?
 U 1 1 5B95EC02
@@ -110,10 +96,6 @@ F 3 "" H 5000 4300 50  0001 C CNN
 	1    5000 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 4150 5000 4000
-Wire Wire Line
-	5000 4000 5750 4000
 Text HLabel 5550 4100 0    60   Output ~ 0
 INT
 Text HLabel 5550 3700 0    60   BiDi ~ 0
@@ -133,4 +115,22 @@ F 3 "" H 5000 4450 50  0001 C CNN
 $EndComp
 Text Notes 5750 2700 0    60   ~ 12
 Acelerómetro
+Wire Wire Line
+	5750 3600 5550 3600
+Wire Wire Line
+	5750 3700 5550 3700
+Wire Wire Line
+	5750 4100 5550 4100
+Wire Wire Line
+	5750 3400 5550 3400
+Wire Wire Line
+	5550 3400 5550 3200
+Wire Wire Line
+	5750 3500 5000 3500
+Wire Wire Line
+	5000 3500 5000 3650
+Wire Wire Line
+	5000 4150 5000 4000
+Wire Wire Line
+	5000 4000 5750 4000
 $EndSCHEMATC
