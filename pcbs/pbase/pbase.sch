@@ -127,7 +127,7 @@ $EndSheet
 $Sheet
 S 3250 4850 1400 600 
 U 5B95B241
-F0 "pwr" 60
+F0 "Alimentación" 60
 F1 "pwr.sch" 60
 $EndSheet
 Wire Wire Line
