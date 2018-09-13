@@ -98,9 +98,9 @@ F 3 "" H 5000 4300 50  0001 C CNN
 $EndComp
 Text HLabel 5550 4100 0    60   Output ~ 0
 INT
-Text HLabel 5550 3700 0    60   BiDi ~ 0
+Text HLabel 7800 4150 2    60   BiDi ~ 0
 SDA0
-Text HLabel 5550 3600 0    60   BiDi ~ 0
+Text HLabel 7800 3600 2    60   BiDi ~ 0
 SCL0
 $Comp
 L GND #PWR?
@@ -133,4 +133,16 @@ Wire Wire Line
 	5000 4150 5000 4000
 Wire Wire Line
 	5000 4000 5750 4000
+Wire Wire Line
+	7400 3600 7800 3600
+Wire Wire Line
+	7400 4150 7800 4150
+Text Label 7400 3600 2    60   ~ 0
+SCL
+Text Label 7400 4150 2    60   ~ 0
+SDA
+Text Label 5550 3600 2    60   ~ 0
+SCL
+Text Label 5550 3700 2    60   ~ 0
+SDA
 $EndSCHEMATC
