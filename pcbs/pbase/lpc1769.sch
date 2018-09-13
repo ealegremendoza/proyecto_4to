@@ -58,17 +58,17 @@ Text HLabel 10300 4300 2    60   BiDi ~ 0
 SCK1
 Text HLabel 10300 4400 2    60   BiDi ~ 0
 SSEL1
-Text HLabel 6400 3550 0    60   Output ~ 0
+Text HLabel 7350 3550 2    60   Output ~ 0
 TXD3
-Text HLabel 6400 3650 0    60   Input ~ 0
+Text HLabel 7350 3650 2    60   Input ~ 0
 RXD3
-Text HLabel 6400 3750 0    60   Input ~ 0
+Text HLabel 7350 3750 2    60   Input ~ 0
 DIR
-Text HLabel 6400 2750 0    60   BiDi ~ 0
+Text HLabel 7350 2750 2    60   BiDi ~ 0
 SDA0
-Text HLabel 6400 2850 0    60   BiDi ~ 0
+Text HLabel 7350 2850 2    60   BiDi ~ 0
 SCL0
-Text HLabel 6400 2950 0    60   Input ~ 0
+Text HLabel 7350 2950 2    60   Input ~ 0
 INT
 Text HLabel 10300 3350 2    60   Input ~ 0
 CAP2.1
@@ -108,10 +108,10 @@ NoConn ~ 3950 5400
 NoConn ~ 4050 5400
 NoConn ~ 4150 5400
 $Comp
-L +3V3 #PWR?
+L +3V3 #PWR01
 U 1 1 5B95BAAE
 P 4700 2000
-F 0 "#PWR?" H 4700 1850 50  0001 C CNN
+F 0 "#PWR01" H 4700 1850 50  0001 C CNN
 F 1 "+3V3" H 4700 2140 50  0000 C CNN
 F 2 "" H 4700 2000 50  0001 C CNN
 F 3 "" H 4700 2000 50  0001 C CNN
@@ -119,10 +119,10 @@ F 3 "" H 4700 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR02
 U 1 1 5B95BB62
 P 1350 2250
-F 0 "#PWR?" H 1350 2000 50  0001 C CNN
+F 0 "#PWR02" H 1350 2000 50  0001 C CNN
 F 1 "GND" H 1350 2100 50  0000 C CNN
 F 2 "" H 1350 2250 50  0001 C CNN
 F 3 "" H 1350 2250 50  0001 C CNN
@@ -159,10 +159,10 @@ NoConn ~ 4450 4500
 NoConn ~ 4450 4600
 NoConn ~ 4450 4700
 $Comp
-L GND #PWR?
+L GND #PWR03
 U 1 1 5B95C004
 P 4700 4950
-F 0 "#PWR?" H 4700 4700 50  0001 C CNN
+F 0 "#PWR03" H 4700 4700 50  0001 C CNN
 F 1 "GND" H 4700 4800 50  0000 C CNN
 F 2 "" H 4700 4950 50  0001 C CNN
 F 3 "" H 4700 4950 50  0001 C CNN
@@ -437,17 +437,17 @@ Text Label 8400 4300 2    60   ~ 0
 SCK1
 Text Label 8400 4400 2    60   ~ 0
 SSEL1
-Text Label 7350 3550 0    60   ~ 0
+Text Label 6400 3550 2    60   ~ 0
 TXD3
-Text Label 7350 3650 0    60   ~ 0
+Text Label 6400 3650 2    60   ~ 0
 RXD3
-Text Label 7350 3750 0    60   ~ 0
+Text Label 6400 3750 2    60   ~ 0
 DIR
-Text Label 7350 2750 0    60   ~ 0
+Text Label 6400 2750 2    60   ~ 0
 SDA0
-Text Label 7350 2850 0    60   ~ 0
+Text Label 6400 2850 2    60   ~ 0
 SCL0
-Text Label 7350 2950 0    60   ~ 0
+Text Label 6400 2950 2    60   ~ 0
 INT
 Text Label 8400 3350 2    60   ~ 0
 CAP2.1
