@@ -35,6 +35,7 @@ LIBS:dk_RF-Transceiver-Modules
 LIBS:acc_mpu6050_gy521_board
 LIBS:lpcxpresso_lpc1769_revb
 LIBS:gps_em506
+LIBS:acc_mpu9250_board
 LIBS:pbase-cache
 EELAYER 25 0
 EELAYER END
@@ -98,9 +99,7 @@ Wire Wire Line
 	5000 3450 5000 3550
 Text Notes 8950 750  0    60   ~ 0
 LEER MPU9250 QUE TIENE MAGNETOMETRO
-Text Notes 6650 3450 0    60   ~ 0
-Desconectar AD0? Sacar un pin?
-Text Notes 6650 3600 0    60   ~ 0
+Text Notes 7200 3550 0    60   ~ 0
 ESTA ES LA CONEXION QUE USA LUCAS?
 $Comp
 L R R?
@@ -131,14 +130,19 @@ F 3 "" H 4650 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACC-MPU6050-GY521-BOARD U?
-U 1 1 5B9F1FCA
+L acc_mpu9250_board U?
+U 1 1 5B9F28BB
 P 5950 3250
-F 0 "U?" H 6850 3650 60  0000 C CNN
-F 1 "ACC-MPU6050-GY521-BOARD" H 6050 3650 60  0000 C CNN
-F 2 "" H 5950 3200 60  0001 C CNN
-F 3 "" H 5950 3200 60  0001 C CNN
+F 0 "U?" H 6550 3450 60  0000 C CNN
+F 1 "acc_mpu9250_board" H 6250 3350 60  0000 C CNN
+F 2 "" H 5950 3250 60  0001 C CNN
+F 3 "" H 5950 3250 60  0001 C CNN
 	1    5950 3250
 	1    0    0    -1  
 $EndComp
+NoConn ~ 5750 4150
+Text HLabel 5550 4250 0    60   Input ~ 0
+FSYNC
+Wire Wire Line
+	5550 4250 5750 4250
 $EndSCHEMATC

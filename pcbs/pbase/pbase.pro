@@ -1,4 +1,4 @@
-update=lun 17 sep 2018 00:14:53 -03
+update=lun 17 sep 2018 00:55:11 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../misc/library/zigbee;../misc/library/lpcxpresso_lpc1769;../misc/library/gps_em506;../misc/library/acc_mpu6050
+LibDir=../misc/library/zigbee;../misc/library/lpcxpresso_lpc1769;../misc/library/gps_em506;../misc/library/acc_mpu6050;../misc/library/acc_mpu9250
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -65,3 +65,4 @@ LibName33=dk_RF-Transceiver-Modules
 LibName34=acc_mpu6050_gy521_board
 LibName35=lpcxpresso_lpc1769_revb
 LibName36=gps_em506
+LibName37=acc_mpu9250_board

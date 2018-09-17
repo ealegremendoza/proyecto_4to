@@ -35,6 +35,7 @@ LIBS:dk_RF-Transceiver-Modules
 LIBS:acc_mpu6050_gy521_board
 LIBS:lpcxpresso_lpc1769_revb
 LIBS:gps_em506
+LIBS:acc_mpu9250_board
 LIBS:pbase-cache
 EELAYER 25 0
 EELAYER END
@@ -89,13 +90,14 @@ F7 "RXD1" O L 7250 2450 60
 F8 "TXD1" I L 7250 2550 60 
 $EndSheet
 $Sheet
-S 3250 2300 1400 600 
+S 3250 2300 1400 750 
 U 5B95B001
 F0 "acc" 60
 F1 "acc.sch" 60
 F2 "INT" O R 4650 2750 60 
 F3 "SDA0" B R 4650 2450 60 
 F4 "SCL0" B R 4650 2600 60 
+F5 "FSYNC" I R 4650 2900 60 
 $EndSheet
 $Sheet
 S 3250 3500 1400 600 

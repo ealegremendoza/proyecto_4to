@@ -35,6 +35,7 @@ LIBS:dk_RF-Transceiver-Modules
 LIBS:acc_mpu6050_gy521_board
 LIBS:lpcxpresso_lpc1769_revb
 LIBS:gps_em506
+LIBS:acc_mpu9250_board
 LIBS:pbase-cache
 EELAYER 25 0
 EELAYER END

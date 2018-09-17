@@ -35,6 +35,7 @@ LIBS:dk_RF-Transceiver-Modules
 LIBS:acc_mpu6050_gy521_board
 LIBS:lpcxpresso_lpc1769_revb
 LIBS:gps_em506
+LIBS:acc_mpu9250_board
 LIBS:pbase-cache
 EELAYER 25 0
 EELAYER END
@@ -129,7 +130,6 @@ F 3 "" H 1350 2250 50  0001 C CNN
 	1    1350 2250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2050 4500
 NoConn ~ 2050 4400
 NoConn ~ 2050 4300
 NoConn ~ 2050 4200
@@ -622,4 +622,28 @@ Connection ~ 9500 4300
 Wire Wire Line
 	9750 4050 9750 4400
 Connection ~ 9750 4400
+Wire Wire Line
+	2050 4500 1650 4500
+Text Label 1650 4500 2    60   ~ 0
+FSYNC
+Wire Wire Line
+	6400 3050 7350 3050
+Text HLabel 7350 3050 2    60   Output ~ 0
+FSYNC
+Text Label 6400 3050 2    60   ~ 0
+FSYNC
+$Comp
+L TEST TP?
+U 1 1 5B9F3B7E
+P 7250 2700
+F 0 "TP?" H 7250 3000 50  0000 C BNN
+F 1 "FSYNC" H 7250 2950 50  0000 C CNN
+F 2 "" H 7250 2700 50  0001 C CNN
+F 3 "" H 7250 2700 50  0001 C CNN
+	1    7250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2700 7250 3050
+Connection ~ 7250 3050
 $EndSCHEMATC
