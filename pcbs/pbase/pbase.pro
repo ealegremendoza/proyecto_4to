@@ -1,4 +1,4 @@
-update=lun 10 sep 2018 00:06:55 -03
+update=lun 17 sep 2018 00:14:53 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../misc/library/zigbee;../misc/library/lpcxpresso_lpc1769;../misc/library/gps_em506;../misc/library/acc_mu6050
+LibDir=../misc/library/zigbee;../misc/library/lpcxpresso_lpc1769;../misc/library/gps_em506;../misc/library/acc_mpu6050
 [eeschema/libraries]
 LibName1=power
 LibName2=device
