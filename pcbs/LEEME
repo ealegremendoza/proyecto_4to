@@ -1,3 +1,9 @@
 PROYECTOS DE KICAD 4.0.7
 /misc -> footprints, libs.
-/pbase -> plaba base
+/pbase -> placa base
+
+RAMA sch_v1.0	-> acc mpu 6050
+RAMA sch_v1.1	-> acc mpu 9250 (con magnetometro) 	
+
+
+
