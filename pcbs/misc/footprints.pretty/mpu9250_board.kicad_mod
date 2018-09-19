@@ -1,4 +1,4 @@
-(module Socket_Strips:Socket_Strip_Straight_1x10_Pitch2.54mm (layer F.Cu) (tedit 5BA06DFB)
+(module Socket_Strips:Socket_Strip_Straight_1x10_Pitch2.54mm (layer F.Cu) (tedit 5BA1C2D3)
   (descr "Through hole straight socket strip, 1x10, 2.54mm pitch, single row")
   (tags "Through hole socket strip THT 1x10 2.54mm single row")
   (fp_text reference REF** (at 0.56 -2.68) (layer F.SilkS)
@@ -37,6 +37,8 @@
   (pad 8 thru_hole oval (at 0 17.78) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (pad 9 thru_hole oval (at 0 20.32) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (pad 10 thru_hole oval (at 0 22.86) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
+  (pad "" thru_hole circle (at 11.29 1.45) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+  (pad "" thru_hole circle (at 11.29 21.39) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   (model ${KISYS3DMOD}/Socket_Strips.3dshapes/Socket_Strip_Straight_1x10_Pitch2.54mm.wrl
     (at (xyz 0 -0.45 0))
     (scale (xyz 1 1 1))

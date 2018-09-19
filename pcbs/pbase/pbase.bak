@@ -43,13 +43,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 8
 Title "Diagrama de bloques "
-Date "2018-09-10"
+Date "2018-09-17"
 Rev "A"
 Comp "UTN - FRBA"
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Utiliza acelerómetro MPU-9250"
+Comment4 "PLACA BASE"
 $EndDescr
 $Sheet
 S 5250 2300 1400 3150
