@@ -1,0 +1,42 @@
+Source:,/home/eze/Escritorio/eze_ub/UTN-FRBA_UBUNTU/4to_nivel/proyecto_4to/pcbs/pbase/pbase.sch
+Tool:,Eeschema 4.0.7-e2-6376~58~ubuntu16.04.1
+Component Count:,16
+
+Individual Components:
+
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,Category,DK_Datasheet_Link,DK_Detail_Page,Description,Digi-Key_PN,Family,MPN,Manufacturer,Status
+,,C1,1uF x 16V,device:CP,Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand,,,,,,,,,,
+,,C2,100n,device:C,Capacitors_SMD:C_0805_HandSoldering,,,,,,,,,,
+,,J1,SD_Card,conn:SD_Card,Connectors:SD_Card_Receptacle,,,,,,,,,,
+,,J2,Conn_01x04,conn:Conn_01x04,Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm,,,,,,,,,,
+,,J3,Conn_01x04,conn:Conn_01x04,Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm,,,,,,,,,,
+,,MOD1,XB24CZ7PIT-004,dk_RF-Transceiver-Modules:XB24CZ7PIT-004,footprints:xbee_xb24cz7pit_004,https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf,RF/IF and RFID,https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf,/product-detail/en/digi-international/XB24CZ7PIT-004/602-1557-ND/5322371,RF TXRX MOD 802.15.4 TRACE ANT,602-1557-ND,RF Transceiver Modules,XB24CZ7PIT-004,Digi International,Active
+,,R1,0R,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+,,R2,10K,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+,,R3,10K,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+,,R4,33K,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+,,R5,33K,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+,,R6,RD1,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+,,R7,RD2,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+,,U1,LPCXpresso_LPC1769_revB,lpcxpresso_lpc1769_revb:LPCXpresso_LPC1769_revB,footprints:lpc1769_board_revC,,,,,,,,,,
+,,U2,acc_mpu9250_board,acc_mpu9250_board:acc_mpu9250_board,footprints:mpu9250_board,,,,,,,,,,
+,,U3,GPS_EM506,gps_em506:GPS_EM506,Connectors_JST:JST_SH_SM06B-SRSS-TB_06x1.00mm_Angled,,,,,,,,,,
+
+
+
+Collated Components:
+
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,Category,DK_Datasheet_Link,DK_Detail_Page,Description,Digi-Key_PN,Family,MPN,Manufacturer,Status
+1,1,C1,1uF x 16V,device:CP,Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand,,,,,,,,,,
+2,1,C2,100n,device:C,Capacitors_SMD:C_0805_HandSoldering,,,,,,,,,,
+3,1,J1,SD_Card,conn:SD_Card,Connectors:SD_Card_Receptacle,,,,,,,,,,
+4,2,"J2, J3",Conn_01x04,conn:Conn_01x04,Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm,,,,,,,,,,
+5,1,MOD1,XB24CZ7PIT-004,dk_RF-Transceiver-Modules:XB24CZ7PIT-004,footprints:xbee_xb24cz7pit_004,https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf,RF/IF and RFID,https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf,/product-detail/en/digi-international/XB24CZ7PIT-004/602-1557-ND/5322371,RF TXRX MOD 802.15.4 TRACE ANT,602-1557-ND,RF Transceiver Modules,XB24CZ7PIT-004,Digi International,Active
+6,1,R1,0R,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+7,2,"R2, R3",10K,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+8,2,"R4, R5",33K,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+9,1,R6,RD1,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+10,1,R7,RD2,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,
+11,1,U1,LPCXpresso_LPC1769_revB,lpcxpresso_lpc1769_revb:LPCXpresso_LPC1769_revB,footprints:lpc1769_board_revC,,,,,,,,,,
+12,1,U2,acc_mpu9250_board,acc_mpu9250_board:acc_mpu9250_board,footprints:mpu9250_board,,,,,,,,,,
+13,1,U3,GPS_EM506,gps_em506:GPS_EM506,Connectors_JST:JST_SH_SM06B-SRSS-TB_06x1.00mm_Angled,,,,,,,,,,

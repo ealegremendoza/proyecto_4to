@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/eze/Escritorio/eze_ub/UTN-FRBA_UBUNTU/4to_nivel/proyecto_4to/pcbs/pbase/pbase.sch</source>
+    <date>mié 19 sep 2018 14:24:35 -03</date>
+    <tool>Eeschema 4.0.7-e2-6376~58~ubuntu16.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Diagrama de bloques </title>
+        <company>UTN - FRBA</company>
+        <rev>A</rev>
+        <date>2018-09-17</date>
+        <source>pbase.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="Utiliza acelerómetro MPU-9250"/>
+        <comment number="4" value="PLACA BASE"/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/lpc1769/" tstamps="/5B95AFB2/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>lpc1769.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Zigbee/" tstamps="/5B95AFE6/">
+      <title_block>
+        <title>Zigbee</title>
+        <company>UTN - FRBA</company>
+        <rev>A</rev>
+        <date>2018-09-10</date>
+        <source>Zigbee.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/acc/" tstamps="/5B95B001/">
+      <title_block>
+        <title>Acelerómetro</title>
+        <company>UTN - FRBA</company>
+        <rev>A</rev>
+        <date>2018-09-10</date>
+        <source>acc.sch</source>
+        <comment number="1" value="Si FSYNC no se usa ponerlo a GND o en LOW."/>
+        <comment number="2" value="R1 es un jumper. Quitarlo si se desea conservar la dirección que trae por defecto."/>
+        <comment number="3" value="Misma conexión que el MPU6050."/>
+        <comment number="4" value="Este acelerómetro ya incorpora un magnetómetro."/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/GPS/" tstamps="/5B95B01D/">
+      <title_block>
+        <title>GPS</title>
+        <company>UTN - FRBA</company>
+        <rev>A</rev>
+        <date>2018-09-10</date>
+        <source>GPS.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/TarjetaSD/" tstamps="/5B95B035/">
+      <title_block>
+        <title>Tarjeta SD</title>
+        <company>UTN - FRBA</company>
+        <rev>A</rev>
+        <date>2018-09-10</date>
+        <source>TarjetaSD.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/Display/" tstamps="/5B95B180/">
+      <title_block>
+        <title>Display</title>
+        <company>UTN - FRBA</company>
+        <rev>A</rev>
+        <date>2018-09-10</date>
+        <source>Display.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="Si alguno de los dos dispositivos ya los incorpora, quitarlos."/>
+        <comment number="4" value="RD1 y RD2 deben calcularse para realizar la comunicación I2C."/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/Alimentación/" tstamps="/5B95B241/">
+      <title_block>
+        <title>Alimentación</title>
+        <company>UTN - FRBA</company>
+        <rev>A</rev>
+        <date>2018-09-10</date>
+        <source>pwr.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>LPCXpresso_LPC1769_revB</value>
+      <footprint>footprints:lpc1769_board_revC</footprint>
+      <libsource lib="lpcxpresso_lpc1769_revb" part="LPCXpresso_LPC1769_revB"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B95E1A1</tstamp>
+    </comp>
+    <comp ref="TP10">
+      <value>RXD1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AC3DF</tstamp>
+    </comp>
+    <comp ref="TP11">
+      <value>TXD1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AD8E7</tstamp>
+    </comp>
+    <comp ref="TP12">
+      <value>CTS1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AD906</tstamp>
+    </comp>
+    <comp ref="TP13">
+      <value>RTS1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AD92A</tstamp>
+    </comp>
+    <comp ref="TP14">
+      <value>SLEEP</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AD985</tstamp>
+    </comp>
+    <comp ref="TP15">
+      <value>SRQ</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AD9AD</tstamp>
+    </comp>
+    <comp ref="TP16">
+      <value>CAP2.1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AD9D8</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>INT</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9ADE86</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>SCL0</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9ADF94</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>SDA0</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9ADFC6</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>SDA2</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE23F</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>SCL2</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE294</tstamp>
+    </comp>
+    <comp ref="TP17">
+      <value>MOSI1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE2D0</tstamp>
+    </comp>
+    <comp ref="TP18">
+      <value>MISO1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE31C</tstamp>
+    </comp>
+    <comp ref="TP19">
+      <value>SCK1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE363</tstamp>
+    </comp>
+    <comp ref="TP20">
+      <value>SSEL1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE3A9</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>TXD3</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE47E</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>RXD3</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE4EE</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>DIR</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE53D</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>FSYNC</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9F3B7E</tstamp>
+    </comp>
+    <comp ref="MOD1">
+      <value>XB24CZ7PIT-004</value>
+      <footprint>footprints:xbee_xb24cz7pit_004</footprint>
+      <datasheet>https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">602-1557-ND</field>
+        <field name="MPN">XB24CZ7PIT-004</field>
+        <field name="Category">RF/IF and RFID</field>
+        <field name="Family">RF Transceiver Modules</field>
+        <field name="DK_Datasheet_Link">https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/digi-international/XB24CZ7PIT-004/602-1557-ND/5322371</field>
+        <field name="Description">RF TXRX MOD 802.15.4 TRACE ANT</field>
+        <field name="Manufacturer">Digi International</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_RF-Transceiver-Modules" part="XB24CZ7PIT-004"/>
+      <sheetpath names="/Zigbee/" tstamps="/5B95AFE6/"/>
+      <tstamp>5B95E421</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/acc/" tstamps="/5B95B001/"/>
+      <tstamp>5B9EFBEB</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>acc_mpu9250_board</value>
+      <footprint>footprints:mpu9250_board</footprint>
+      <libsource lib="acc_mpu9250_board" part="acc_mpu9250_board"/>
+      <sheetpath names="/acc/" tstamps="/5B95B001/"/>
+      <tstamp>5B9F28BB</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>GPS_EM506</value>
+      <footprint>Connectors_JST:JST_SH_SM06B-SRSS-TB_06x1.00mm_Angled</footprint>
+      <libsource lib="gps_em506" part="GPS_EM506"/>
+      <sheetpath names="/GPS/" tstamps="/5B95B01D/"/>
+      <tstamp>5B961160</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>SD_Card</value>
+      <footprint>Connectors:SD_Card_Receptacle</footprint>
+      <libsource lib="conn" part="SD_Card"/>
+      <sheetpath names="/TarjetaSD/" tstamps="/5B95B035/"/>
+      <tstamp>5B95F793</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1uF x 16V</value>
+      <footprint>Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/TarjetaSD/" tstamps="/5B95B035/"/>
+      <tstamp>5B95F982</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/TarjetaSD/" tstamps="/5B95B035/"/>
+      <tstamp>5B95F99B</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TarjetaSD/" tstamps="/5B95B035/"/>
+      <tstamp>5B96095B</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TarjetaSD/" tstamps="/5B95B035/"/>
+      <tstamp>5B96098C</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>33K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TarjetaSD/" tstamps="/5B95B035/"/>
+      <tstamp>5B9609B5</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>33K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/TarjetaSD/" tstamps="/5B95B035/"/>
+      <tstamp>5B9609E0</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x04</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/Display/" tstamps="/5B95B180/"/>
+      <tstamp>5B962FE7</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>RD1</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Display/" tstamps="/5B95B180/"/>
+      <tstamp>5B97E047</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>RD2</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Display/" tstamps="/5B95B180/"/>
+      <tstamp>5B97E06A</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x04</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/Alimentación/" tstamps="/5B95B241/"/>
+      <tstamp>5B96555C</tstamp>
+    </comp>
+    <comp ref="TP21">
+      <value>TEST</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/Alimentación/" tstamps="/5B95B241/"/>
+      <tstamp>5B982DEF</tstamp>
+    </comp>
+    <comp ref="TP22">
+      <value>TEST</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/Alimentación/" tstamps="/5B95B241/"/>
+      <tstamp>5B982E1A</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="gps_em506" part="GPS_EM506">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">GPS_EM506</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VIN" type="power_in"/>
+        <pin num="3" name="RXD" type="input"/>
+        <pin num="4" name="TXD" type="output"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="Directive" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="lpcxpresso_lpc1769_revb" part="LPCXpresso_LPC1769_revB">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LPCXpresso_LPC1769_revB</field>
+      </fields>
+      <pins>
+        <pin num="J-1" name="GNDX" type="power_in"/>
+        <pin num="J-2" name="EXT_POWX" type="power_in"/>
+        <pin num="J-3" name="VB" type="power_in"/>
+        <pin num="J-4" name="RESET_N" type="input"/>
+        <pin num="J-5" name="P0[9]" type="BiDi"/>
+        <pin num="J-6" name="P0[8]" type="BiDi"/>
+        <pin num="J-7" name="P0[7]" type="BiDi"/>
+        <pin num="J-8" name="P0[6]" type="BiDi"/>
+        <pin num="J-9" name="P0[0]" type="BiDi"/>
+        <pin num="J-10" name="P0[1]" type="BiDi"/>
+        <pin num="J-11" name="P0[18]" type="BiDi"/>
+        <pin num="J-12" name="P0[17]" type="BiDi"/>
+        <pin num="J-13" name="P0[15]" type="BiDi"/>
+        <pin num="J-14" name="P0[16]" type="BiDi"/>
+        <pin num="J-15" name="P0[23]" type="BiDi"/>
+        <pin num="J-16" name="P0[24]" type="BiDi"/>
+        <pin num="J-17" name="P0[25]" type="BiDi"/>
+        <pin num="J-18" name="P0[26]" type="BiDi"/>
+        <pin num="J-19" name="P1[30]" type="BiDi"/>
+        <pin num="J-20" name="P1[31]" type="BiDi"/>
+        <pin num="J-21" name="P0[2]" type="BiDi"/>
+        <pin num="J-22" name="P0[3]" type="BiDi"/>
+        <pin num="J-23" name="P0[21]" type="BiDi"/>
+        <pin num="J-24" name="P0[22]" type="BiDi"/>
+        <pin num="J-25" name="P0[27]" type="BiDi"/>
+        <pin num="J-26" name="P0[28]" type="BiDi"/>
+        <pin num="J-27" name="P2[13]" type="BiDi"/>
+        <pin num="J-28" name="3V3" type="power_in"/>
+        <pin num="J-29" name="not_used1" type="NotConnected"/>
+        <pin num="J-30" name="not_used2" type="NotConnected"/>
+        <pin num="J-31" name="not_used3" type="NotConnected"/>
+        <pin num="J-32" name="RD-" type="input"/>
+        <pin num="J-33" name="RD+" type="input"/>
+        <pin num="J-34" name="TD-" type="output"/>
+        <pin num="J-35" name="TD+" type="output"/>
+        <pin num="J-36" name="USB-D-" type="BiDi"/>
+        <pin num="J-37" name="USB-D+" type="BiDi"/>
+        <pin num="J-38" name="P0[4]" type="BiDi"/>
+        <pin num="J-39" name="P0[5]" type="BiDi"/>
+        <pin num="J-40" name="P0[10]" type="BiDi"/>
+        <pin num="J-41" name="P0[11]" type="BiDi"/>
+        <pin num="J-42" name="P2[0]" type="BiDi"/>
+        <pin num="J-43" name="P2[1]" type="BiDi"/>
+        <pin num="J-44" name="P2[2]" type="BiDi"/>
+        <pin num="J-45" name="P2[3]" type="BiDi"/>
+        <pin num="J-46" name="P2[4]" type="BiDi"/>
+        <pin num="J-47" name="P2[5]" type="BiDi"/>
+        <pin num="J-48" name="P2[6}" type="BiDi"/>
+        <pin num="J-49" name="P2[7]" type="BiDi"/>
+        <pin num="J-50" name="P2[8]" type="BiDi"/>
+        <pin num="J-51" name="P2[10]" type="BiDi"/>
+        <pin num="J-52" name="P2[11]" type="BiDi"/>
+        <pin num="J-53" name="P2[12]" type="BiDi"/>
+        <pin num="J-54" name="GNDX" type="power_in"/>
+        <pin num="PD1" name="P1[18]" type="BiDi"/>
+        <pin num="PD2" name="P1[19]" type="BiDi"/>
+        <pin num="PD3" name="P1[20]" type="BiDi"/>
+        <pin num="PD4" name="P1[21]" type="BiDi"/>
+        <pin num="PD5" name="P1[22]" type="BiDi"/>
+        <pin num="PD6" name="P1[23]" type="BiDi"/>
+        <pin num="PD7" name="P1[24]" type="BiDi"/>
+        <pin num="PD8" name="P1[25]" type="BiDi"/>
+        <pin num="PD9" name="P1[26]" type="BiDi"/>
+        <pin num="PD10" name="P1[27]" type="BiDi"/>
+        <pin num="PD11" name="P1[28]" type="BiDi"/>
+        <pin num="PD12" name="P1[29]" type="BiDi"/>
+        <pin num="PD13" name="P3[25]" type="BiDi"/>
+        <pin num="PD14" name="P3[26]" type="BiDi"/>
+        <pin num="PD15" name="P4[28]" type="BiDi"/>
+        <pin num="PD16" name="P4[29]" type="BiDi"/>
+        <pin num="PD17" name="P0[19]" type="BiDi"/>
+        <pin num="PD18" name="P0[20]" type="BiDi"/>
+        <pin num="PD19" name="P2[9]" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="SD_Card">
+      <description>SD Card Reader</description>
+      <docs>http://portal.fciconnect.com/Comergent//fci/drawing/10067847.pdf</docs>
+      <footprints>
+        <fp>SD_Card_Receptacle</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SD_Card</field>
+        <field name="Footprint">10067847-001</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CD/DAT3" type="input"/>
+        <pin num="2" name="CMD" type="input"/>
+        <pin num="3" name="VSS" type="input"/>
+        <pin num="4" name="VDD" type="input"/>
+        <pin num="5" name="CLK" type="input"/>
+        <pin num="6" name="VSS" type="input"/>
+        <pin num="7" name="DAT0" type="input"/>
+        <pin num="8" name="DAT1" type="input"/>
+        <pin num="9" name="DAT2" type="input"/>
+        <pin num="10" name="CARD_DETECT" type="input"/>
+        <pin num="11" name="WRITE_PROTECT" type="input"/>
+        <pin num="12" name="SHELL1" type="input"/>
+        <pin num="13" name="SHELL2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="TEST">
+      <description>Testpoint, connection for test equipment</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TEST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_RF-Transceiver-Modules" part="XB24CZ7PIT-004">
+      <description>RF TXRX MOD 802.15.4 TRACE ANT</description>
+      <docs>https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf</docs>
+      <fields>
+        <field name="Reference">MOD</field>
+        <field name="Value">XB24CZ7PIT-004</field>
+        <field name="Footprint">digikey-footprints:XBEE-20_THT</field>
+        <field name="Datasheet">https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf</field>
+        <field name="Digi-Key_PN">602-1557-ND</field>
+        <field name="MPN">XB24CZ7PIT-004</field>
+        <field name="Category">RF/IF and RFID</field>
+        <field name="Family">RF Transceiver Modules</field>
+        <field name="DK_Datasheet_Link">https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/digi-international/XB24CZ7PIT-004/602-1557-ND/5322371</field>
+        <field name="Description">RF TXRX MOD 802.15.4 TRACE ANT</field>
+        <field name="Manufacturer">Digi International</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vcc" type="power_in"/>
+        <pin num="2" name="DOUT" type="output"/>
+        <pin num="3" name="DIN/~Config" type="input"/>
+        <pin num="4" name="DO8" type="output"/>
+        <pin num="5" name="~Reset" type="input"/>
+        <pin num="6" name="PWM0/RSSI" type="output"/>
+        <pin num="7" name="PWM1" type="output"/>
+        <pin num="8" name="Reserved" type="NotConnected"/>
+        <pin num="9" name="~DTR~/SLRQ/DI8" type="input"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="AD4/DIO4" type="BiDi"/>
+        <pin num="12" name="DIO7/~CTS" type="BiDi"/>
+        <pin num="13" name="ON/~SLEEP" type="output"/>
+        <pin num="14" name="VREF" type="input"/>
+        <pin num="15" name="AD5/DIO5" type="BiDi"/>
+        <pin num="16" name="AD6/DIO6/~RTS" type="BiDi"/>
+        <pin num="17" name="AD3/DIO3" type="BiDi"/>
+        <pin num="18" name="AD2/DIO2" type="BiDi"/>
+        <pin num="19" name="AD1/DIO1" type="BiDi"/>
+        <pin num="20" name="AD0/DIO0" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="acc_mpu9250_board" part="acc_mpu9250_board">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">acc_mpu9250_board</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="SCL/SCLK" type="BiDi"/>
+        <pin num="4" name="SDA/SDI" type="BiDi"/>
+        <pin num="5" name="EDA" type="BiDi"/>
+        <pin num="6" name="ECL" type="BiDi"/>
+        <pin num="7" name="ADO/SDO" type="input"/>
+        <pin num="8" name="INT" type="output"/>
+        <pin num="9" name="NCS" type="BiDi"/>
+        <pin num="10" name="FSYNC" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="dk_RF-Transceiver-Modules">
+      <uri>/home/eze/Escritorio/eze_ub/UTN-FRBA_UBUNTU/4to_nivel/proyecto_4to/pcbs/misc/library/zigbee/dk_RF-Transceiver-Modules.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="lpcxpresso_lpc1769_revb">
+      <uri>/home/eze/Escritorio/eze_ub/UTN-FRBA_UBUNTU/4to_nivel/proyecto_4to/pcbs/misc/library/lpcxpresso_lpc1769/lpcxpresso_lpc1769_revb.lib</uri>
+    </library>
+    <library logical="gps_em506">
+      <uri>/home/eze/Escritorio/eze_ub/UTN-FRBA_UBUNTU/4to_nivel/proyecto_4to/pcbs/misc/library/gps_em506/gps_em506.lib</uri>
+    </library>
+    <library logical="acc_mpu9250_board">
+      <uri>/home/eze/Escritorio/eze_ub/UTN-FRBA_UBUNTU/4to_nivel/proyecto_4to/pcbs/misc/library/acc_mpu9250/acc_mpu9250_board.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/lpc1769/CAP2.1">
+      <node ref="MOD1" pin="6"/>
+      <node ref="U1" pin="J-39"/>
+      <node ref="TP16" pin="1"/>
+    </net>
+    <net code="2" name="/GPS/DIR">
+      <node ref="TP7" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U1" pin="J-11"/>
+    </net>
+    <net code="3" name="/GPS/RXD3">
+      <node ref="TP6" pin="1"/>
+      <node ref="U3" pin="4"/>
+      <node ref="U1" pin="J-10"/>
+    </net>
+    <net code="4" name="/GPS/TXD3">
+      <node ref="TP5" pin="1"/>
+      <node ref="U1" pin="J-9"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="5" name="/TarjetaSD/SSEL1">
+      <node ref="J1" pin="1"/>
+      <node ref="TP20" pin="1"/>
+      <node ref="U1" pin="J-8"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="6" name="/TarjetaSD/MOSI1">
+      <node ref="TP17" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="U1" pin="J-5"/>
+    </net>
+    <net code="7" name="/TarjetaSD/SCK1">
+      <node ref="U1" pin="J-7"/>
+      <node ref="J1" pin="5"/>
+      <node ref="TP19" pin="1"/>
+    </net>
+    <net code="8" name="/Display/SDA2">
+      <node ref="J2" pin="1"/>
+      <node ref="U1" pin="J-40"/>
+      <node ref="TP8" pin="1"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="9" name="/Display/SCL2">
+      <node ref="J2" pin="2"/>
+      <node ref="TP9" pin="1"/>
+      <node ref="U1" pin="J-41"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="10" name="/Zigbee/RXD1">
+      <node ref="MOD1" pin="2"/>
+      <node ref="U1" pin="J-43"/>
+      <node ref="TP10" pin="1"/>
+    </net>
+    <net code="11" name="/Zigbee/TXD1">
+      <node ref="MOD1" pin="3"/>
+      <node ref="U1" pin="J-42"/>
+      <node ref="TP11" pin="1"/>
+    </net>
+    <net code="12" name="/Zigbee/CTS">
+      <node ref="MOD1" pin="12"/>
+      <node ref="U1" pin="J-44"/>
+      <node ref="TP12" pin="1"/>
+    </net>
+    <net code="13" name="/Zigbee/RTS">
+      <node ref="TP13" pin="1"/>
+      <node ref="U1" pin="J-49"/>
+      <node ref="MOD1" pin="16"/>
+    </net>
+    <net code="14" name="/Zigbee/SLEEP">
+      <node ref="TP14" pin="1"/>
+      <node ref="U1" pin="J-47"/>
+      <node ref="MOD1" pin="13"/>
+    </net>
+    <net code="15" name="/Zigbee/SLRQ">
+      <node ref="MOD1" pin="9"/>
+      <node ref="U1" pin="J-48"/>
+      <node ref="TP15" pin="1"/>
+    </net>
+    <net code="16" name="/TarjetaSD/MISO1">
+      <node ref="U1" pin="J-6"/>
+      <node ref="J1" pin="7"/>
+      <node ref="TP18" pin="1"/>
+    </net>
+    <net code="17" name="/acc/SDA0">
+      <node ref="TP1" pin="1"/>
+      <node ref="U2" pin="4"/>
+      <node ref="U1" pin="J-25"/>
+    </net>
+    <net code="18" name="/acc/SCL0">
+      <node ref="TP2" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U1" pin="J-26"/>
+    </net>
+    <net code="19" name="/acc/INT">
+      <node ref="U2" pin="8"/>
+      <node ref="U1" pin="J-27"/>
+      <node ref="TP3" pin="1"/>
+    </net>
+    <net code="20" name="/acc/FSYNC">
+      <node ref="U1" pin="J-24"/>
+      <node ref="TP4" pin="1"/>
+      <node ref="U2" pin="10"/>
+    </net>
+    <net code="21" name="+3V3">
+      <node ref="R3" pin="1"/>
+      <node ref="MOD1" pin="5"/>
+      <node ref="R2" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="MOD1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="J-28"/>
+      <node ref="J1" pin="4"/>
+      <node ref="TP22" pin="1"/>
+    </net>
+    <net code="22" name="Net-(U1-PadJ-21)">
+      <node ref="U1" pin="J-21"/>
+    </net>
+    <net code="23" name="Net-(U1-PadJ-12)">
+      <node ref="U1" pin="J-12"/>
+    </net>
+    <net code="24" name="Net-(U1-PadJ-13)">
+      <node ref="U1" pin="J-13"/>
+    </net>
+    <net code="25" name="Net-(U1-PadJ-14)">
+      <node ref="U1" pin="J-14"/>
+    </net>
+    <net code="26" name="Net-(U1-PadJ-15)">
+      <node ref="U1" pin="J-15"/>
+    </net>
+    <net code="27" name="Net-(U1-PadJ-16)">
+      <node ref="U1" pin="J-16"/>
+    </net>
+    <net code="28" name="Net-(U1-PadJ-17)">
+      <node ref="U1" pin="J-17"/>
+    </net>
+    <net code="29" name="Net-(U1-PadJ-18)">
+      <node ref="U1" pin="J-18"/>
+    </net>
+    <net code="30" name="Net-(U1-PadJ-19)">
+      <node ref="U1" pin="J-19"/>
+    </net>
+    <net code="31" name="Net-(U1-PadJ-20)">
+      <node ref="U1" pin="J-20"/>
+    </net>
+    <net code="32" name="Net-(U1-PadJ-4)">
+      <node ref="U1" pin="J-4"/>
+    </net>
+    <net code="33" name="Net-(U1-PadJ-22)">
+      <node ref="U1" pin="J-22"/>
+    </net>
+    <net code="34" name="Net-(U1-PadJ-23)">
+      <node ref="U1" pin="J-23"/>
+    </net>
+    <net code="35" name="Net-(U1-PadPD1)">
+      <node ref="U1" pin="PD1"/>
+    </net>
+    <net code="36" name="Net-(U1-PadPD2)">
+      <node ref="U1" pin="PD2"/>
+    </net>
+    <net code="37" name="Net-(U1-PadJ-38)">
+      <node ref="U1" pin="J-38"/>
+    </net>
+    <net code="38" name="Net-(U1-PadJ-53)">
+      <node ref="U1" pin="J-53"/>
+    </net>
+    <net code="39" name="Net-(U1-PadJ-52)">
+      <node ref="U1" pin="J-52"/>
+    </net>
+    <net code="40" name="Net-(U1-PadJ-51)">
+      <node ref="U1" pin="J-51"/>
+    </net>
+    <net code="41" name="Net-(U1-PadJ-50)">
+      <node ref="U1" pin="J-50"/>
+    </net>
+    <net code="42" name="Net-(U1-PadJ-46)">
+      <node ref="U1" pin="J-46"/>
+    </net>
+    <net code="43" name="Net-(U1-PadJ-45)">
+      <node ref="U1" pin="J-45"/>
+    </net>
+    <net code="44" name="Net-(U1-PadPD3)">
+      <node ref="U1" pin="PD3"/>
+    </net>
+    <net code="45" name="Net-(U1-PadJ-37)">
+      <node ref="U1" pin="J-37"/>
+    </net>
+    <net code="46" name="Net-(U1-PadJ-36)">
+      <node ref="U1" pin="J-36"/>
+    </net>
+    <net code="47" name="Net-(U1-PadJ-35)">
+      <node ref="U1" pin="J-35"/>
+    </net>
+    <net code="48" name="Net-(U1-PadJ-34)">
+      <node ref="U1" pin="J-34"/>
+    </net>
+    <net code="49" name="Net-(U1-PadJ-33)">
+      <node ref="U1" pin="J-33"/>
+    </net>
+    <net code="50" name="Net-(U1-PadJ-32)">
+      <node ref="U1" pin="J-32"/>
+    </net>
+    <net code="51" name="Net-(U1-PadJ-2)">
+      <node ref="U1" pin="J-2"/>
+    </net>
+    <net code="52" name="Net-(U1-PadJ-3)">
+      <node ref="U1" pin="J-3"/>
+    </net>
+    <net code="53" name="Net-(U1-PadPD12)">
+      <node ref="U1" pin="PD12"/>
+    </net>
+    <net code="54" name="Net-(U1-PadPD4)">
+      <node ref="U1" pin="PD4"/>
+    </net>
+    <net code="55" name="Net-(U1-PadPD5)">
+      <node ref="U1" pin="PD5"/>
+    </net>
+    <net code="56" name="Net-(U1-PadPD6)">
+      <node ref="U1" pin="PD6"/>
+    </net>
+    <net code="57" name="Net-(U1-PadPD7)">
+      <node ref="U1" pin="PD7"/>
+    </net>
+    <net code="58" name="Net-(U1-PadPD8)">
+      <node ref="U1" pin="PD8"/>
+    </net>
+    <net code="59" name="Net-(U1-PadPD9)">
+      <node ref="U1" pin="PD9"/>
+    </net>
+    <net code="60" name="Net-(U1-PadPD10)">
+      <node ref="U1" pin="PD10"/>
+    </net>
+    <net code="61" name="Net-(U1-PadPD11)">
+      <node ref="U1" pin="PD11"/>
+    </net>
+    <net code="62" name="Net-(U1-PadPD13)">
+      <node ref="U1" pin="PD13"/>
+    </net>
+    <net code="63" name="Net-(U1-PadPD14)">
+      <node ref="U1" pin="PD14"/>
+    </net>
+    <net code="64" name="Net-(U1-PadPD15)">
+      <node ref="U1" pin="PD15"/>
+    </net>
+    <net code="65" name="Net-(U1-PadPD16)">
+      <node ref="U1" pin="PD16"/>
+    </net>
+    <net code="66" name="Net-(U1-PadPD17)">
+      <node ref="U1" pin="PD17"/>
+    </net>
+    <net code="67" name="Net-(U1-PadPD18)">
+      <node ref="U1" pin="PD18"/>
+    </net>
+    <net code="68" name="Net-(U1-PadPD19)">
+      <node ref="U1" pin="PD19"/>
+    </net>
+    <net code="69" name="Net-(U1-PadJ-29)">
+      <node ref="U1" pin="J-29"/>
+    </net>
+    <net code="70" name="Net-(U1-PadJ-30)">
+      <node ref="U1" pin="J-30"/>
+    </net>
+    <net code="71" name="Net-(U1-PadJ-31)">
+      <node ref="U1" pin="J-31"/>
+    </net>
+    <net code="72" name="Net-(MOD1-Pad20)">
+      <node ref="MOD1" pin="20"/>
+    </net>
+    <net code="73" name="Net-(MOD1-Pad19)">
+      <node ref="MOD1" pin="19"/>
+    </net>
+    <net code="74" name="Net-(MOD1-Pad18)">
+      <node ref="MOD1" pin="18"/>
+    </net>
+    <net code="75" name="Net-(MOD1-Pad17)">
+      <node ref="MOD1" pin="17"/>
+    </net>
+    <net code="76" name="Net-(MOD1-Pad15)">
+      <node ref="MOD1" pin="15"/>
+    </net>
+    <net code="77" name="Net-(MOD1-Pad11)">
+      <node ref="MOD1" pin="11"/>
+    </net>
+    <net code="78" name="Net-(MOD1-Pad8)">
+      <node ref="MOD1" pin="8"/>
+    </net>
+    <net code="79" name="Net-(MOD1-Pad7)">
+      <node ref="MOD1" pin="7"/>
+    </net>
+    <net code="80" name="Net-(MOD1-Pad4)">
+      <node ref="MOD1" pin="4"/>
+    </net>
+    <net code="81" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="82" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="83" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="84" name="Net-(U2-Pad9)">
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="85" name="/TarjetaSD/data2">
+      <node ref="J1" pin="9"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="86" name="Net-(J1-Pad11)">
+      <node ref="J1" pin="11"/>
+    </net>
+    <net code="87" name="Net-(J1-Pad13)">
+      <node ref="J1" pin="13"/>
+    </net>
+    <net code="88" name="Net-(J1-Pad10)">
+      <node ref="J1" pin="10"/>
+    </net>
+    <net code="89" name="/TarjetaSD/data1">
+      <node ref="J1" pin="8"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="90" name="+5V">
+      <node ref="J3" pin="3"/>
+      <node ref="J2" pin="3"/>
+      <node ref="R7" pin="1"/>
+      <node ref="TP21" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="91" name="GND">
+      <node ref="U2" pin="2"/>
+      <node ref="J3" pin="4"/>
+      <node ref="J3" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="J1" pin="12"/>
+      <node ref="J1" pin="6"/>
+      <node ref="U1" pin="J-1"/>
+      <node ref="MOD1" pin="14"/>
+      <node ref="U1" pin="J-54"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U3" pin="5"/>
+      <node ref="J2" pin="4"/>
+      <node ref="MOD1" pin="10"/>
+    </net>
+  </nets>
+</export>
