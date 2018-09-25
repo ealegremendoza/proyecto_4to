@@ -148,40 +148,14 @@ Wire Wire Line
 	5350 3900 5600 3900
 Connection ~ 5600 3900
 Connection ~ 5600 4500
-Wire Wire Line
-	5350 3800 6350 3800
 Connection ~ 5800 3800
-Wire Wire Line
-	5350 4000 7500 4000
 Connection ~ 6850 4000
-$Comp
-L TEST TP21
-U 1 1 5B982DEF
-P 6350 3750
-F 0 "TP21" H 6350 4050 50  0000 C BNN
-F 1 "5V" H 6350 4000 50  0000 C CNN
-F 2 "footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 6350 3750 50  0001 C CNN
-F 3 "" H 6350 3750 50  0001 C CNN
-	1    6350 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST TP22
-U 1 1 5B982E1A
-P 7500 3950
-F 0 "TP22" H 7500 4250 50  0000 C BNN
-F 1 "3V3" H 7500 4200 50  0000 C CNN
-F 2 "footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7500 3950 50  0001 C CNN
-F 3 "" H 7500 3950 50  0001 C CNN
-	1    7500 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7500 4000 7500 3950
 Connection ~ 7200 4000
-Wire Wire Line
-	6350 3800 6350 3750
 Connection ~ 6050 3800
 Wire Wire Line
 	6050 4500 5600 4500
+Wire Wire Line
+	6050 3800 5350 3800
+Wire Wire Line
+	7200 4000 5350 4000
 $EndSCHEMATC
