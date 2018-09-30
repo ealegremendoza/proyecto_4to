@@ -67,7 +67,7 @@
     (pad_size 3.2 3.2)
     (pad_drill 3.2)
     (pad_to_mask_clearance 0.2)
-    (aux_axis_origin 0 0)
+    (aux_axis_origin 120 145)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x00030_80000001)
@@ -2597,8 +2597,8 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
-  (gr_text "Material: FR4" (at 228 60) (layer Cmts.User)
-    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  (gr_text "Material: FR4\nCopper Weight: 1oz / 35um\nPCB SIZE: 100 X 100 mm\nPCB COLOR: RED\n" (at 220 60) (layer Cmts.User)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (dimension 3.2 (width 0.3) (layer Dwgs.User)
     (gr_text "3,200 mm" (at 105 140.05) (layer Dwgs.User)
