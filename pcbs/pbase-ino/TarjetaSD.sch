@@ -59,7 +59,7 @@ U 1 1 5B95F793
 P 5450 2200
 F 0 "J1" H 4800 2750 50  0000 C CNN
 F 1 "SD_Card" H 6050 1650 50  0000 C CNN
-F 2 "Connectors:SD_Card_Receptacle" H 5650 2550 50  0001 C CNN
+F 2 "footprints:SD_TE_2041021_edit" H 5650 2550 50  0001 C CNN
 F 3 "" H 5450 2200 50  0001 C CNN
 	1    5450 2200
 	1    0    0    -1  
@@ -290,12 +290,9 @@ Wire Wire Line
 Wire Wire Line
 	4550 2600 4300 2600
 Wire Wire Line
-	4750 3450 6550 3450
-Wire Wire Line
 	6550 3450 6550 3350
 Wire Wire Line
 	5550 3550 5550 3450
-Connection ~ 5550 3450
 Wire Wire Line
 	5950 3550 5950 3450
 Connection ~ 5950 3450
@@ -314,7 +311,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 4400 6650 4400
 Wire Wire Line
-	6350 3550 6350 3450
+	6350 3450 6350 3550
 Connection ~ 6350 3450
 Wire Wire Line
 	6350 3850 6350 4500
@@ -328,9 +325,6 @@ Wire Wire Line
 Connection ~ 5950 4950
 Wire Wire Line
 	5550 4800 5550 4950
-Connection ~ 5150 3450
-Wire Wire Line
-	5150 3550 5150 3450
 Wire Wire Line
 	4750 3550 4750 3450
 $Comp
@@ -375,4 +369,24 @@ Text Notes 850  7100 0    60   ~ 12
 IMPORTANTE:\nConexionado basado en el siguiente tutorial: https://www.youtube.com/watch?v=E7l2UUhi0jk&t=249s\n\nSegún el mismo, los valores de los resistores son los siguientes:\nR2 y R3  No se conectan.\nR4 = R5=R6 = 1K8\nR7=R8=R9 = 3K3\n\nSegún kit infotronic:\nR2 = R3 = 10K\nR4 = R5 = 33K\nR6, R7, R8 Y R9 NO SE CONECTAN\n----------------------------------------------------------------\nEsto ocurre debido a que arduino maneja SPI con 5v y el estandar SD es con 3v3. \nSe emplea un divisor resistivo para bajar esta tensión.\nEl LPC se maneja con 3v3 por eso es la segunda configuración.\n
 Text Notes 6700 3450 0    60   ~ 0
 -> Tensión con la que el microcontrolador maneja SPI!\n+5V arduino\n+3v3 lpc1769
+Wire Wire Line
+	5150 3450 5150 3550
+Wire Wire Line
+	5550 3450 6550 3450
+$Comp
+L +3V3 #PWR020
+U 1 1 5BB2A1E8
+P 4950 3350
+F 0 "#PWR020" H 4950 3200 50  0001 C CNN
+F 1 "+3V3" H 4950 3490 50  0000 C CNN
+F 2 "" H 4950 3350 50  0001 C CNN
+F 3 "" H 4950 3350 50  0001 C CNN
+	1    4950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3450 5150 3450
+Wire Wire Line
+	4950 3450 4950 3350
+Connection ~ 4950 3450
 $EndSCHEMATC

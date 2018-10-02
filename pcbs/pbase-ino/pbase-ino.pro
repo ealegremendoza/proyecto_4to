@@ -1,4 +1,4 @@
-update=dom 30 sep 2018 20:00:16 -03
+update=lun 01 oct 2018 17:44:47 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -68,3 +68,13 @@ LibName36=aic1117
 LibName37=lm2575
 LibName38=lm2940
 LibName39=dk_RF-Transceiver-Modules
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
