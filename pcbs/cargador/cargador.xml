@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>G:/Mis documentos/Trabajos de Leandro/Materias_Leandro/proyecto/cargador/cargador.sch</source>
+    <date>19/09/2018 01:44:11 p.m.</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>cargador.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/bateria/" tstamps="/5B919D1D/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>bateria.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/regulador/" tstamps="/5B91DF19/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>regulador.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>Barrel_Jack</value>
+      <footprint>Connectors:BARREL_JACK</footprint>
+      <libsource lib="conn" part="Barrel_Jack"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B9199B7</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x04_Male</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x04_Male"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B945594</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>Vin</value>
+      <footprint>TestPoint:TestPoint_Pad_D3.0mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B998B31</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>VBAT</value>
+      <footprint>TestPoint:TestPoint_Pad_D3.0mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5B998EBB</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>BQ24004</value>
+      <footprint>Housings_SSOP:HTSSOP-20-1EP_4.4x6.5mm_Pitch0.65mm_ThermalPad</footprint>
+      <libsource lib="bq24004" part="BQ24004"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B919D29</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>0.1</value>
+      <footprint>Resistors_SMD:R_2512_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B919E2E</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B919E70</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>120</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B91CA6F</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B91CADC</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LEDs:LED_1206_HandSoldering</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B91CF66</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>470</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B91D079</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>Battery</value>
+      <footprint>Battery_Holders:Bulgin_BX0036_1xC</footprint>
+      <libsource lib="device" part="Battery"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B91D4D5</tstamp>
+    </comp>
+    <comp ref="TH1">
+      <value>10K</value>
+      <footprint>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical</footprint>
+      <libsource lib="device" part="Thermistor_NTC"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B91D858</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>0.22uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B9982FE</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B9983FC</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B99862A</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>APG</value>
+      <footprint>TestPoint:TestPoint_Pad_D3.0mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5B9992E7</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>Jumper</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <libsource lib="device" part="Jumper"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5BA00EC7</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>Jumper</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <libsource lib="device" part="Jumper"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5BA00FCC</tstamp>
+    </comp>
+    <comp ref="JP3">
+      <value>Jumper</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
+      <libsource lib="device" part="Jumper"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5BA01026</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>10pF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/bateria/" tstamps="/5B919D1D/"/>
+      <tstamp>5BA01AAE</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LM2940-5V</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-223-3_TabPin2</footprint>
+      <libsource lib="lm2940" part="LM2940-5V"/>
+      <sheetpath names="/regulador/" tstamps="/5B91DF19/"/>
+      <tstamp>5B91E090</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>LM2575-3.3</value>
+      <footprint>TO_SOT_Packages_SMD:TO-263-5_TabPin3</footprint>
+      <libsource lib="lm2575" part="LM2575-3.3"/>
+      <sheetpath names="/regulador/" tstamps="/5B91DF19/"/>
+      <tstamp>5B91E11C</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>0.47uF</value>
+      <footprint>Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/regulador/" tstamps="/5B91DF19/"/>
+      <tstamp>5B91E298</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100uF </value>
+      <footprint>Capacitors_SMD:CP_Elec_6.3x5.3</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/regulador/" tstamps="/5B91DF19/"/>
+      <tstamp>5B91E453</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>1N5817</value>
+      <footprint>Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal</footprint>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/regulador/" tstamps="/5B91DF19/"/>
+      <tstamp>5B91E555</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>330uH</value>
+      <footprint>footprints:Choke_PK0810</footprint>
+      <libsource lib="device" part="L_Core_Ferrite"/>
+      <sheetpath names="/regulador/" tstamps="/5B91DF19/"/>
+      <tstamp>5B91E71D</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>330u 50V</value>
+      <footprint>Capacitors_SMD:CP_Elec_10x10.5</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/regulador/" tstamps="/5B91DF19/"/>
+      <tstamp>5B91E7B1</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>47uF</value>
+      <footprint>Capacitors_Tantalum_SMD:CP_Tantalum_Case-C_EIA-6032-28_Hand</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/regulador/" tstamps="/5B91DF19/"/>
+      <tstamp>5B997AF8</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="bq24004" part="BQ24004">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BQ24004</field>
+      </fields>
+      <pins>
+        <pin num="1" name="N/C" type="NotConnected"/>
+        <pin num="2" name="IN" type="input"/>
+        <pin num="3" name="IN" type="input"/>
+        <pin num="4" name="VCC" type="power_in"/>
+        <pin num="5" name="ISNS" type="input"/>
+        <pin num="6" name="N/C" type="NotConnected"/>
+        <pin num="7" name="APG/THERM" type="input"/>
+        <pin num="8" name="EN" type="input"/>
+        <pin num="9" name="VSEL" type="input"/>
+        <pin num="10" name="GND/HEATSINK" type="power_in"/>
+        <pin num="11" name="N/C" type="NotConnected"/>
+        <pin num="12" name="CR" type="input"/>
+        <pin num="13" name="TMRSEL" type="input"/>
+        <pin num="14" name="STAT1" type="openCol"/>
+        <pin num="15" name="N/C" type="NotConnected"/>
+        <pin num="16" name="AGND" type="power_out"/>
+        <pin num="17" name="VSENSE" type="input"/>
+        <pin num="18" name="OUT" type="power_out"/>
+        <pin num="19" name="OUT" type="power_out"/>
+        <pin num="20" name="N/C" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Barrel_Jack">
+      <aliases>
+        <alias>Jack-DC</alias>
+      </aliases>
+      <description>DC Barrel Jack</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Battery">
+      <description>Battery (multiple cells)</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x04_Male">
+      <description>Generic connector, single row, 01x04</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Jumper">
+      <description>Jumper, generic, normally closed</description>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <description>LED generic</description>
+      <footprints>
+        <fp>LED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="lm2575" part="LM2575-3.3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2575-3.3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="OUT" type="power_out"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="FEEDBACK" type="output"/>
+        <pin num="5" name="~ON~/OFF" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="lm2940" part="LM2940-5V">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2940-5V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="L_Core_Ferrite">
+      <description>Inductor with Ferrite Core</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Core_Ferrite</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="TEST">
+      <description>Testpoint, connection for test equipment</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TEST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Thermistor_NTC">
+      <description>temperature dependent resistor, negative temperature coefficient (NTC)</description>
+      <footprints>
+        <fp>*NTC*</fp>
+        <fp>*Thermistor*</fp>
+        <fp>PIN?ARRAY*</fp>
+        <fp>bornier*</fp>
+        <fp>*Terminal?Block*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TH</field>
+        <field name="Value">Thermistor_NTC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>I:\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>I:\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="bq24004">
+      <uri>G:\Mis documentos\Trabajos de Leandro\Materias_Leandro\proyecto\cargador\symbols\cargador_bq24004\bq24004.lib</uri>
+    </library>
+    <library logical="lm2575">
+      <uri>G:\Mis documentos\Trabajos de Leandro\Materias_Leandro\proyecto\cargador\symbols\regulador\lm2575.lib</uri>
+    </library>
+    <library logical="lm2940">
+      <uri>G:\Mis documentos\Trabajos de Leandro\Materias_Leandro\proyecto\cargador\symbols\regulador\lm2940.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="J2" pin="3"/>
+      <node ref="U2" pin="3"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="2" name="+3V3">
+      <node ref="J2" pin="1"/>
+      <node ref="U3" pin="4"/>
+      <node ref="C8" pin="1"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="3" name="/bateria/V+">
+      <node ref="BT1" pin="1"/>
+      <node ref="U1" pin="18"/>
+      <node ref="C6" pin="1"/>
+      <node ref="U1" pin="19"/>
+      <node ref="TP2" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="U1" pin="17"/>
+      <node ref="C5" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="4" name="GND">
+      <node ref="U1" pin="10"/>
+      <node ref="U1" pin="16"/>
+      <node ref="R3" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U3" pin="3"/>
+      <node ref="U3" pin="5"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="JP3" pin="2"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="TH1" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="J1" pin="2"/>
+      <node ref="J2" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="J2" pin="4"/>
+      <node ref="C3" pin="2"/>
+    </net>
+    <net code="5" name="VCC">
+      <node ref="C1" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R4" pin="1"/>
+      <node ref="JP1" pin="2"/>
+      <node ref="TP1" pin="1"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U1" pin="9"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="4"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="6" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="7" name="Net-(D1-Pad2)">
+      <node ref="R4" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="8" name="/bateria/TMRSEL">
+      <node ref="JP1" pin="1"/>
+      <node ref="JP2" pin="1"/>
+      <node ref="U1" pin="13"/>
+      <node ref="JP3" pin="1"/>
+    </net>
+    <net code="9" name="Net-(C9-Pad1)">
+      <node ref="JP2" pin="2"/>
+      <node ref="C9" pin="1"/>
+    </net>
+    <net code="10" name="/bateria/CR">
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="12"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C3" pin="1"/>
+    </net>
+    <net code="11" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="12" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="13" name="Net-(U1-Pad20)">
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="14" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="15" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="16" name="Net-(R2-Pad2)">
+      <node ref="U1" pin="7"/>
+      <node ref="TP3" pin="1"/>
+      <node ref="TH1" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="17" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="18" name="Net-(D2-Pad1)">
+      <node ref="L1" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U3" pin="2"/>
+    </net>
+  </nets>
+</export>

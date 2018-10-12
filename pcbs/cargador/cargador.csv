@@ -1,0 +1,64 @@
+Source:,G:/Mis documentos/Trabajos de Leandro/Materias_Leandro/proyecto/cargador/cargador.sch
+Date:,19/09/2018 01:44:11 p.m.
+Tool:,Eeschema 4.0.7
+Component Count:,26
+
+Individual Components:
+
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet
+,,BT1,Battery,device:Battery,Battery_Holders:Bulgin_BX0036_1xC,
+,,C1,10uF,device:CP,Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand,
+,,C2,0.1uF,device:C,Capacitors_SMD:C_0805_HandSoldering,
+,,C3,0.22uF,device:C,Capacitors_SMD:C_0805_HandSoldering,
+,,C4,1uF,device:C,Capacitors_SMD:C_0805_HandSoldering,
+,,C5,100uF ,device:CP,Capacitors_SMD:CP_Elec_6.3x5.3,
+,,C6,0.47uF,device:C,Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand,
+,,C7,47uF,device:CP,Capacitors_Tantalum_SMD:CP_Tantalum_Case-C_EIA-6032-28_Hand,
+,,C8,330u 50V,device:CP,Capacitors_SMD:CP_Elec_10x10.5,
+,,C9,10pF,device:C,Capacitors_SMD:C_0805_HandSoldering,
+,,D1,LED,device:LED,LEDs:LED_1206_HandSoldering,
+,,D2,1N5817,device:D_Schottky,Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal,
+,,J1,Barrel_Jack,conn:Barrel_Jack,Connectors:BARREL_JACK,
+,,J2,Conn_01x04_Male,conn:Conn_01x04_Male,Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm,
+,,JP1,Jumper,device:Jumper,Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm,
+,,JP2,Jumper,device:Jumper,Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm,
+,,JP3,Jumper,device:Jumper,Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm,
+,,L1,330uH,device:L_Core_Ferrite,footprints:Choke_PK0810,
+,,R1,0.1,device:R,Resistors_SMD:R_2512_HandSoldering,
+,,R2,120,device:R,Resistors_SMD:R_0805_HandSoldering,
+,,R3,1k,device:R,Resistors_SMD:R_0805_HandSoldering,
+,,R4,470,device:R,Resistors_SMD:R_0805_HandSoldering,
+,,TH1,10K,device:Thermistor_NTC,Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical,
+,,U1,BQ24004,bq24004:BQ24004,Housings_SSOP:HTSSOP-20-1EP_4.4x6.5mm_Pitch0.65mm_ThermalPad,
+,,U2,LM2940-5V,lm2940:LM2940-5V,TO_SOT_Packages_SMD:SOT-223-3_TabPin2,
+,,U3,LM2575-3.3,lm2575:LM2575-3.3,TO_SOT_Packages_SMD:TO-263-5_TabPin3,
+
+
+
+Collated Components:
+
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet
+1,1,BT1,Battery,device:Battery,Battery_Holders:Bulgin_BX0036_1xC,
+2,1,C1,10uF,device:CP,Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand,
+3,1,C2,0.1uF,device:C,Capacitors_SMD:C_0805_HandSoldering,
+4,1,C3,0.22uF,device:C,Capacitors_SMD:C_0805_HandSoldering,
+5,1,C4,1uF,device:C,Capacitors_SMD:C_0805_HandSoldering,
+6,1,C5,100uF ,device:CP,Capacitors_SMD:CP_Elec_6.3x5.3,
+7,1,C6,0.47uF,device:C,Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand,
+8,1,C7,47uF,device:CP,Capacitors_Tantalum_SMD:CP_Tantalum_Case-C_EIA-6032-28_Hand,
+9,1,C8,330u 50V,device:CP,Capacitors_SMD:CP_Elec_10x10.5,
+10,1,C9,10pF,device:C,Capacitors_SMD:C_0805_HandSoldering,
+11,1,D1,LED,device:LED,LEDs:LED_1206_HandSoldering,
+12,1,D2,1N5817,device:D_Schottky,Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal,
+13,1,J1,Barrel_Jack,conn:Barrel_Jack,Connectors:BARREL_JACK,
+14,1,J2,Conn_01x04_Male,conn:Conn_01x04_Male,Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm,
+15,3,"JP1, JP2, JP3",Jumper,device:Jumper,Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm,
+16,1,L1,330uH,device:L_Core_Ferrite,footprints:Choke_PK0810,
+17,1,R1,0.1,device:R,Resistors_SMD:R_2512_HandSoldering,
+18,1,R2,120,device:R,Resistors_SMD:R_0805_HandSoldering,
+19,1,R3,1k,device:R,Resistors_SMD:R_0805_HandSoldering,
+20,1,R4,470,device:R,Resistors_SMD:R_0805_HandSoldering,
+21,1,TH1,10K,device:Thermistor_NTC,Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical,
+22,1,U1,BQ24004,bq24004:BQ24004,Housings_SSOP:HTSSOP-20-1EP_4.4x6.5mm_Pitch0.65mm_ThermalPad,
+23,1,U2,LM2940-5V,lm2940:LM2940-5V,TO_SOT_Packages_SMD:SOT-223-3_TabPin2,
+24,1,U3,LM2575-3.3,lm2575:LM2575-3.3,TO_SOT_Packages_SMD:TO-263-5_TabPin3,
