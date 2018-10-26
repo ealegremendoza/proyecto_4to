@@ -1,9 +1,13 @@
 PROYECTOS DE KICAD 4.0.7
-/misc -> footprints, libs.
-/pbase -> placa base
+/misc 	->	footprints, libs.
+/pdf 	->	pdfs de las placas
+/pngs	->	pdfs convertidos a pngs solo para visualización ráída en GITHUB.
 
-RAMA sch_v1.0	-> acc mpu 6050
-RAMA sch_v1.1	-> acc mpu 9250 (con magnetometro) 	
+/pbase 	->	placa base con LPCXPRESSO LPC1769 REVC
+/pbase-ino ->	placa base con ARDUINO MEGA
+/cargador ->	placa cargadora de baterías de Litio.
 
-
+placa1-3_G1.zip	-> pbase GERBERS
+placa2-3_G1.zip -> cargador GERBERS
+placa3-3_G1.zip	-> pbase_ino GERBERS
 
