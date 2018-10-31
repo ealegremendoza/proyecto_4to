@@ -2703,7 +2703,7 @@
   (gr_text TAUTOLOGICAL (at 150 30) (layer Cmts.User)
     (effects (font (size 4 4) (thickness 1)))
   )
-  (gr_text "Valores:\nR1 = 0R (opcional)\nR2 = NO CONECTAR\nR3 = NO CONECTAR\nR4 = 1K8\nR5 = 1K8\nR6 = 1K8\nR7 = 3K3\nR8 = 3K3\nR9 = 3K3\nC1 = 1uF x 16V (polarizado)\nC2 = 100nF\nC3 = 100uF\nC4 = 330uF\nD1 = 1N5817" (at 220 100) (layer Cmts.User)
+  (gr_text "Valores:\nR1 = 0R (opcional)\nR2 = NO CONECTAR\nR3 = NO CONECTAR\nR4 = 1K8\nR5 = 1K8\nR6 = 1K8\nR7 = 3K3\nR8 = 3K3\nR9 = 3K3\nC1 = 1uF x 16V (polarizado)\nC2 = 100nF\nC3 = 100uF\nC4 = 330uF\nD1 = 1N5817\nL1 = 330uH Choke PK0810" (at 220 100) (layer Cmts.User)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (gr_text 330uH (at 139 136) (layer F.Fab)

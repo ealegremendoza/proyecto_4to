@@ -46,7 +46,7 @@ Title "Diagrama de bloques "
 Date "2018-10-30"
 Rev "A"
 Comp "UTN - FRBA"
-Comment1 ""
+Comment1 "Autores: Alegre M. E., Bautista L., Tarazona L."
 Comment2 ""
 Comment3 "Antena incorporada. 30x30 mm. Largo cable 30mm. UART."
 Comment4 "GPS EM506"
@@ -109,6 +109,8 @@ Text HLabel 6600 3900 2    60   Output ~ 0
 RXD3
 Text HLabel 5200 3900 0    60   Input ~ 0
 TXD3
-Text Notes 5800 3250 0    60   ~ 12
-GPS\n
+Text Notes 5650 2650 0    157  ~ 31
+GPS
+Text Notes 5750 2850 0    60   ~ 0
+EM506
 $EndSCHEMATC
