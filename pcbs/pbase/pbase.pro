@@ -1,4 +1,4 @@
-update=lun 17 sep 2018 00:55:11 -03
+update=mar 30 oct 2018 23:11:14 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -66,3 +66,13 @@ LibName34=acc_mpu6050_gy521_board
 LibName35=lpcxpresso_lpc1769_revb
 LibName36=gps_em506
 LibName37=acc_mpu9250_board
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

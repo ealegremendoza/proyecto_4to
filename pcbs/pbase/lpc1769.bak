@@ -42,14 +42,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 8
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Diagrama de bloques "
+Date "2018-10-30"
+Rev "A"
+Comp "UTN - FRBA"
+Comment1 "Autores: Alegre M. E., Bautista L., Tarazona L."
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Microcontrolador LPCXpresso LPC1769"
 $EndDescr
 Text HLabel 10300 4700 2    60   BiDi ~ 0
 MOSI1
@@ -180,7 +180,7 @@ F 3 "" H 3500 1650 60  0001 C CNN
 	1    2250 2100
 	1    0    0    -1  
 $EndComp
-Text Notes 2200 1800 0    60   ~ 12
+Text Notes 4900 1450 0    157  ~ 31
 Microcontrolador
 Text Label 1650 2600 2    60   ~ 0
 MOSI1
@@ -646,4 +646,18 @@ F 3 "" H 9750 4650 50  0001 C CNN
 	1    9750 4650
 	1    0    0    -1  
 $EndComp
+Text Notes 5250 1700 0    60   ~ 0
+LPCXpresso LPC1769 REV C
+Text Notes 1450 7400 0    60   ~ 0
+NOTA: \nDebido a que no se hace uso de los pines PD (los inferiores), pueden usarse\nhasta la fecha las siguientes revisiones:\n- REV B\n- REV C\n- REV D *\n\nSIEMPRE QUE NO SE SUELDEN DICHOS PINES AL LPC Y/O A ESTA PLACA BASE.
+Wire Notes Line
+	1300 6550 5200 6550
+Wire Notes Line
+	5200 6550 5200 7600
+Wire Notes Line
+	5200 7600 1300 7600
+Wire Notes Line
+	1300 7600 1300 6550
+Text Notes 7550 2050 0    79   ~ 16
+TEST POINTS
 $EndSCHEMATC

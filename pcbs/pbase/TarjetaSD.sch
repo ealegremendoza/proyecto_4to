@@ -42,14 +42,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 8
-Title "Tarjeta SD"
-Date "2018-09-10"
+Title "Diagrama de bloques "
+Date "2018-10-30"
 Rev "A"
 Comp "UTN - FRBA"
-Comment1 ""
+Comment1 "Autores: Alegre M. E., Bautista L., Tarazona L."
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Tarjeta SD"
 $EndDescr
 $Comp
 L SD_Card J1
@@ -297,6 +297,6 @@ Text HLabel 6250 5100 2    60   Output ~ 0
 MISO1
 Text HLabel 6250 5200 2    60   Input ~ 0
 SCK1
-Text Notes 5550 2000 0    60   ~ 12
+Text Notes 5250 1550 0    157  ~ 31
 Tarjeta SD\n
 $EndSCHEMATC

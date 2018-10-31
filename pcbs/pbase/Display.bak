@@ -42,14 +42,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 8
-Title "Display"
-Date "2018-09-10"
+Title "Diagrama de bloques "
+Date "2018-10-30"
 Rev "A"
 Comp "UTN - FRBA"
-Comment1 ""
+Comment1 "Autores: Alegre M. E., Bautista L., Tarazona L."
 Comment2 ""
-Comment3 "Si alguno de los dos dispositivos ya los incorpora, quitarlos."
-Comment4 "RD1 y RD2 deben calcularse para realizar la comunicación I2C."
+Comment3 ""
+Comment4 "Display OLED I2C"
 $EndDescr
 $Comp
 L Conn_01x04 J2
@@ -62,7 +62,7 @@ F 3 "" H 5450 3850 50  0001 C CNN
 	1    5450 3850
 	1    0    0    -1  
 $EndComp
-Text Notes 4700 3100 0    60   ~ 0
+Text Notes 4750 2300 0    60   ~ 0
 Display Oled 0.96 Azul 128x64 I2c Ssd1306 Nubbeo 
 Text Label 4850 4050 2    60   ~ 0
 GND
@@ -106,27 +106,7 @@ F 3 "" H 6800 4250 50  0001 C CNN
 	1    6800 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4850 3750 5250 3750
-Wire Wire Line
-	4850 4050 5250 4050
-Wire Wire Line
-	4850 3850 5250 3850
-Wire Wire Line
-	4850 3950 5250 3950
-Wire Wire Line
-	6250 3850 7750 3850
-Wire Wire Line
-	6250 3950 7750 3950
-Wire Wire Line
-	6250 3750 6800 3750
-Wire Wire Line
-	6250 4050 6800 4050
-Wire Wire Line
-	6800 4050 6800 4250
-Wire Wire Line
-	6800 3750 6800 3350
-Text Notes 5700 2800 0    60   ~ 12
+Text Notes 5500 1950 0    157  ~ 31
 Display
 $Comp
 L R R6
@@ -150,12 +130,6 @@ F 3 "" H 7550 3550 50  0001 C CNN
 	1    7550 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7150 3700 7150 3850
-Connection ~ 7150 3850
-Wire Wire Line
-	7550 3700 7550 3950
-Connection ~ 7550 3950
 $Comp
 L +5V #PWR020
 U 1 1 5B97FB09
@@ -178,8 +152,44 @@ F 3 "" H 7550 3350 50  0001 C CNN
 	1    7550 3350
 	1    0    0    -1  
 $EndComp
+Text Notes 1150 6900 0    60   ~ 12
+IMPORTANTE.\nRD1 y RD2 deben calcularse para realizar la comunicación I2C.\nSi alguno de los dos dispositivos ya los incorpora, quitarlos.
+Wire Wire Line
+	4850 3750 5250 3750
+Wire Wire Line
+	4850 4050 5250 4050
+Wire Wire Line
+	4850 3850 5250 3850
+Wire Wire Line
+	4850 3950 5250 3950
+Wire Wire Line
+	6250 3850 7750 3850
+Wire Wire Line
+	6250 3950 7750 3950
+Wire Wire Line
+	6250 3750 6800 3750
+Wire Wire Line
+	6250 4050 6800 4050
+Wire Wire Line
+	6800 4050 6800 4250
+Wire Wire Line
+	6800 3750 6800 3350
+Wire Wire Line
+	7150 3700 7150 3850
+Connection ~ 7150 3850
+Wire Wire Line
+	7550 3700 7550 3950
+Connection ~ 7550 3950
 Wire Wire Line
 	7150 3350 7150 3400
 Wire Wire Line
 	7550 3350 7550 3400
+Wire Notes Line
+	1100 6550 1100 7000
+Wire Notes Line
+	1100 7000 4200 7000
+Wire Notes Line
+	4200 7000 4200 6550
+Wire Notes Line
+	4200 6550 1100 6550
 $EndSCHEMATC

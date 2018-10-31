@@ -42,14 +42,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 8
-Title "GPS"
-Date "2018-09-10"
+Title "Diagrama de bloques "
+Date "2018-10-30"
 Rev "A"
 Comp "UTN - FRBA"
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Antena incorporada. 30x30 mm. Largo cable 30mm. UART."
+Comment4 "GPS EM506"
 $EndDescr
 $Comp
 L GPS_EM506 U3

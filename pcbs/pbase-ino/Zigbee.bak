@@ -44,14 +44,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
-Title "Zigbee"
-Date "2018-09-10"
+Title "TAUTOLOGICAL"
+Date "2018-10-30"
 Rev "A"
-Comp "UTN - FRBA"
-Comment1 ""
+Comp "UTN-FRBA"
+Comment1 "Autores: Alegre M. E., Bautista L., Tarazona L."
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Antena incorporada. UART."
+Comment4 "Comunicación Zigbee. XBEE / XBEE-PRO"
 $EndDescr
 $Comp
 L +3V3 #PWR010
@@ -146,7 +146,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 3750 8100 3750
 Wire Wire Line
-	7600 3950 8100 3950
+	7600 3850 8100 3850
 Text Label 7600 3450 2    60   ~ 0
 RXD1
 Text Label 7600 3550 2    60   ~ 0
@@ -155,7 +155,7 @@ Text Label 7600 3650 2    60   ~ 0
 SleepRQ
 Text Label 7600 3750 2    60   ~ 0
 SLEEP
-Text Label 7600 3950 2    60   ~ 0
+Text Label 7600 3850 2    60   ~ 0
 RSSI
 Text HLabel 8100 3450 2    60   Output ~ 0
 RXD1
@@ -165,7 +165,7 @@ Text HLabel 8100 3650 2    60   Input ~ 0
 SLRQ
 Text HLabel 8100 3750 2    60   Output ~ 0
 SLEEP
-Text HLabel 8100 3950 2    60   Output ~ 0
+Text HLabel 8100 3850 2    60   Output ~ 0
 RSSI
 $Comp
 L XB24CZ7PIT-004 MOD1
@@ -187,8 +187,10 @@ F 12 "Active" H 6150 5250 60  0001 L CNN "Status"
 	1    5950 4050
 	1    0    0    -1  
 $EndComp
-Text Notes 5300 2650 0    60   ~ 12
-Comunicación Zigbee
+Text Notes 3700 1700 0    157  ~ 31
+Comunicación inalámbrica - Zigbee
 NoConn ~ 6550 3950
 NoConn ~ 6550 4250
+Text Notes 5200 2050 0    79   ~ 16
+XBEE / XBEE-PRO
 $EndSCHEMATC

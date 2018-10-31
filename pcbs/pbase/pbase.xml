@@ -2,110 +2,110 @@
 <export version="D">
   <design>
     <source>/home/eze/Escritorio/eze_ub/UTN-FRBA_UBUNTU/4to_nivel/proyecto_4to/pcbs/pbase/pbase.sch</source>
-    <date>mié 19 sep 2018 14:24:35 -03</date>
+    <date>mar 30 oct 2018 21:24:32 -03</date>
     <tool>Eeschema 4.0.7-e2-6376~58~ubuntu16.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Diagrama de bloques </title>
         <company>UTN - FRBA</company>
         <rev>A</rev>
-        <date>2018-09-17</date>
+        <date>2018-10-30</date>
         <source>pbase.sch</source>
-        <comment number="1" value=""/>
+        <comment number="1" value="https://github.com/ealegremendoza/proyecto_4to"/>
         <comment number="2" value=""/>
-        <comment number="3" value="Utiliza acelerómetro MPU-9250"/>
-        <comment number="4" value="PLACA BASE"/>
+        <comment number="3" value="Medidor de posición y velocidad de sujetos en movimiento."/>
+        <comment number="4" value="Sport Tracker"/>
       </title_block>
     </sheet>
     <sheet number="2" name="/lpc1769/" tstamps="/5B95AFB2/">
       <title_block>
-        <title/>
-        <company/>
-        <rev/>
-        <date/>
+        <title>Diagrama de bloques </title>
+        <company>UTN - FRBA</company>
+        <rev>A</rev>
+        <date>2018-10-30</date>
         <source>lpc1769.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
-        <comment number="4" value=""/>
+        <comment number="4" value="Microcontrolador LPCXpresso LPC1769"/>
       </title_block>
     </sheet>
     <sheet number="3" name="/Zigbee/" tstamps="/5B95AFE6/">
       <title_block>
-        <title>Zigbee</title>
+        <title>Diagrama de bloques </title>
         <company>UTN - FRBA</company>
         <rev>A</rev>
-        <date>2018-09-10</date>
+        <date>2018-10-30</date>
         <source>Zigbee.sch</source>
         <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
+        <comment number="2" value="Antena incorporada. UART"/>
+        <comment number="3" value="XBEE / XBEE-PRO"/>
+        <comment number="4" value="Comunicación Zigbee"/>
       </title_block>
     </sheet>
     <sheet number="4" name="/acc/" tstamps="/5B95B001/">
       <title_block>
-        <title>Acelerómetro</title>
+        <title>Diagrama de bloques </title>
         <company>UTN - FRBA</company>
         <rev>A</rev>
-        <date>2018-09-10</date>
+        <date>2018-10-30</date>
         <source>acc.sch</source>
-        <comment number="1" value="Si FSYNC no se usa ponerlo a GND o en LOW."/>
-        <comment number="2" value="R1 es un jumper. Quitarlo si se desea conservar la dirección que trae por defecto."/>
-        <comment number="3" value="Misma conexión que el MPU6050."/>
-        <comment number="4" value="Este acelerómetro ya incorpora un magnetómetro."/>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="Pin [1:8] compatible con MPU6050."/>
+        <comment number="4" value="Acelerómetro MPU9250. con magnetómetro. I2C."/>
       </title_block>
     </sheet>
     <sheet number="5" name="/GPS/" tstamps="/5B95B01D/">
       <title_block>
-        <title>GPS</title>
+        <title>Diagrama de bloques </title>
         <company>UTN - FRBA</company>
         <rev>A</rev>
-        <date>2018-09-10</date>
+        <date>2018-10-30</date>
         <source>GPS.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
+        <comment number="3" value="Antena incorporada. 30x30 mm. Largo cable 30mm. UART."/>
+        <comment number="4" value="GPS EM506"/>
       </title_block>
     </sheet>
     <sheet number="6" name="/TarjetaSD/" tstamps="/5B95B035/">
       <title_block>
-        <title>Tarjeta SD</title>
+        <title>Diagrama de bloques </title>
         <company>UTN - FRBA</company>
         <rev>A</rev>
-        <date>2018-09-10</date>
+        <date>2018-10-30</date>
         <source>TarjetaSD.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
-        <comment number="4" value=""/>
+        <comment number="4" value="Tarjeta SD"/>
       </title_block>
     </sheet>
     <sheet number="7" name="/Display/" tstamps="/5B95B180/">
       <title_block>
-        <title>Display</title>
+        <title>Diagrama de bloques </title>
         <company>UTN - FRBA</company>
         <rev>A</rev>
-        <date>2018-09-10</date>
+        <date>2018-10-30</date>
         <source>Display.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
-        <comment number="3" value="Si alguno de los dos dispositivos ya los incorpora, quitarlos."/>
-        <comment number="4" value="RD1 y RD2 deben calcularse para realizar la comunicación I2C."/>
+        <comment number="3" value=""/>
+        <comment number="4" value="Display OLED I2C"/>
       </title_block>
     </sheet>
     <sheet number="8" name="/Alimentación/" tstamps="/5B95B241/">
       <title_block>
-        <title>Alimentación</title>
+        <title>Diagrama de bloques </title>
         <company>UTN - FRBA</company>
         <rev>A</rev>
-        <date>2018-09-10</date>
+        <date>2018-10-30</date>
         <source>pwr.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
+        <comment number="3" value="Conectar a 5V y a 3.3V de continua."/>
+        <comment number="4" value="Alimentación externa de la placa."/>
       </title_block>
     </sheet>
   </design>
@@ -117,40 +117,12 @@
       <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
       <tstamp>5B95E1A1</tstamp>
     </comp>
-    <comp ref="TP10">
-      <value>RXD1</value>
+    <comp ref="TP16">
+      <value>CAP2</value>
       <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
       <libsource lib="device" part="TEST"/>
       <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9AC3DF</tstamp>
-    </comp>
-    <comp ref="TP11">
-      <value>TXD1</value>
-      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
-      <libsource lib="device" part="TEST"/>
-      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9AD8E7</tstamp>
-    </comp>
-    <comp ref="TP12">
-      <value>CTS1</value>
-      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
-      <libsource lib="device" part="TEST"/>
-      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9AD906</tstamp>
-    </comp>
-    <comp ref="TP13">
-      <value>RTS1</value>
-      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
-      <libsource lib="device" part="TEST"/>
-      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9AD92A</tstamp>
-    </comp>
-    <comp ref="TP14">
-      <value>SLEEP</value>
-      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
-      <libsource lib="device" part="TEST"/>
-      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9AD985</tstamp>
+      <tstamp>5B9AD9D8</tstamp>
     </comp>
     <comp ref="TP15">
       <value>SRQ</value>
@@ -159,40 +131,89 @@
       <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
       <tstamp>5B9AD9AD</tstamp>
     </comp>
-    <comp ref="TP16">
-      <value>CAP2.1</value>
+    <comp ref="TP14">
+      <value>SLEEP</value>
       <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
       <libsource lib="device" part="TEST"/>
       <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9AD9D8</tstamp>
+      <tstamp>5B9AD985</tstamp>
+    </comp>
+    <comp ref="TP13">
+      <value>RTS1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AD92A</tstamp>
+    </comp>
+    <comp ref="TP12">
+      <value>CTS1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AD906</tstamp>
+    </comp>
+    <comp ref="TP11">
+      <value>TXD1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AD8E7</tstamp>
+    </comp>
+    <comp ref="TP10">
+      <value>RXD1</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AC3DF</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>FSYNC</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5BA40BB7</tstamp>
     </comp>
     <comp ref="TP3">
       <value>INT</value>
       <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
       <libsource lib="device" part="TEST"/>
       <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9ADE86</tstamp>
-    </comp>
-    <comp ref="TP2">
-      <value>SCL0</value>
-      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
-      <libsource lib="device" part="TEST"/>
-      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9ADF94</tstamp>
+      <tstamp>5BA40BFC</tstamp>
     </comp>
     <comp ref="TP1">
       <value>SDA0</value>
       <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
       <libsource lib="device" part="TEST"/>
       <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9ADFC6</tstamp>
+      <tstamp>5BA40CA4</tstamp>
     </comp>
-    <comp ref="TP8">
-      <value>SDA2</value>
+    <comp ref="TP2">
+      <value>SCL0</value>
       <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
       <libsource lib="device" part="TEST"/>
       <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9AE23F</tstamp>
+      <tstamp>5BA40C47</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>DIR</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE53D</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>RXD3</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE4EE</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>TXD3</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE47E</tstamp>
     </comp>
     <comp ref="TP9">
       <value>SCL2</value>
@@ -200,6 +221,13 @@
       <libsource lib="device" part="TEST"/>
       <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
       <tstamp>5B9AE294</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>SDA2</value>
+      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
+      <tstamp>5B9AE23F</tstamp>
     </comp>
     <comp ref="TP17">
       <value>MOSI1</value>
@@ -228,34 +256,6 @@
       <libsource lib="device" part="TEST"/>
       <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
       <tstamp>5B9AE3A9</tstamp>
-    </comp>
-    <comp ref="TP5">
-      <value>TXD3</value>
-      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
-      <libsource lib="device" part="TEST"/>
-      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9AE47E</tstamp>
-    </comp>
-    <comp ref="TP6">
-      <value>RXD3</value>
-      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
-      <libsource lib="device" part="TEST"/>
-      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9AE4EE</tstamp>
-    </comp>
-    <comp ref="TP7">
-      <value>DIR</value>
-      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
-      <libsource lib="device" part="TEST"/>
-      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9AE53D</tstamp>
-    </comp>
-    <comp ref="TP4">
-      <value>FSYNC</value>
-      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
-      <libsource lib="device" part="TEST"/>
-      <sheetpath names="/lpc1769/" tstamps="/5B95AFB2/"/>
-      <tstamp>5B9F3B7E</tstamp>
     </comp>
     <comp ref="MOD1">
       <value>XB24CZ7PIT-004</value>
@@ -299,7 +299,7 @@
     </comp>
     <comp ref="J1">
       <value>SD_Card</value>
-      <footprint>Connectors:SD_Card_Receptacle</footprint>
+      <footprint>footprints:SD_TE_2041021_edit</footprint>
       <libsource lib="conn" part="SD_Card"/>
       <sheetpath names="/TarjetaSD/" tstamps="/5B95B035/"/>
       <tstamp>5B95F793</tstamp>
@@ -373,20 +373,6 @@
       <libsource lib="conn" part="Conn_01x04"/>
       <sheetpath names="/Alimentación/" tstamps="/5B95B241/"/>
       <tstamp>5B96555C</tstamp>
-    </comp>
-    <comp ref="TP21">
-      <value>TEST</value>
-      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
-      <libsource lib="device" part="TEST"/>
-      <sheetpath names="/Alimentación/" tstamps="/5B95B241/"/>
-      <tstamp>5B982DEF</tstamp>
-    </comp>
-    <comp ref="TP22">
-      <value>TEST</value>
-      <footprint>footprints:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
-      <libsource lib="device" part="TEST"/>
-      <sheetpath names="/Alimentación/" tstamps="/5B95B241/"/>
-      <tstamp>5B982E1A</tstamp>
     </comp>
   </components>
   <libparts>
@@ -648,14 +634,14 @@
     </libpart>
   </libparts>
   <libraries>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
     <library logical="device">
       <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
     <library logical="dk_RF-Transceiver-Modules">
       <uri>/home/eze/Escritorio/eze_ub/UTN-FRBA_UBUNTU/4to_nivel/proyecto_4to/pcbs/misc/library/zigbee/dk_RF-Transceiver-Modules.lib</uri>
-    </library>
-    <library logical="conn">
-      <uri>/usr/share/kicad/library/conn.lib</uri>
     </library>
     <library logical="lpcxpresso_lpc1769_revb">
       <uri>/home/eze/Escritorio/eze_ub/UTN-FRBA_UBUNTU/4to_nivel/proyecto_4to/pcbs/misc/library/lpcxpresso_lpc1769/lpcxpresso_lpc1769_revb.lib</uri>
@@ -674,14 +660,14 @@
       <node ref="TP16" pin="1"/>
     </net>
     <net code="2" name="/GPS/DIR">
+      <node ref="U1" pin="J-11"/>
       <node ref="TP7" pin="1"/>
       <node ref="U3" pin="6"/>
-      <node ref="U1" pin="J-11"/>
     </net>
     <net code="3" name="/GPS/RXD3">
       <node ref="TP6" pin="1"/>
-      <node ref="U3" pin="4"/>
       <node ref="U1" pin="J-10"/>
+      <node ref="U3" pin="4"/>
     </net>
     <net code="4" name="/GPS/TXD3">
       <node ref="TP5" pin="1"/>
@@ -689,63 +675,63 @@
       <node ref="U3" pin="3"/>
     </net>
     <net code="5" name="/TarjetaSD/SSEL1">
-      <node ref="J1" pin="1"/>
-      <node ref="TP20" pin="1"/>
       <node ref="U1" pin="J-8"/>
+      <node ref="TP20" pin="1"/>
       <node ref="R4" pin="2"/>
+      <node ref="J1" pin="1"/>
     </net>
     <net code="6" name="/TarjetaSD/MOSI1">
       <node ref="TP17" pin="1"/>
+      <node ref="U1" pin="J-5"/>
       <node ref="J1" pin="2"/>
       <node ref="R5" pin="2"/>
-      <node ref="U1" pin="J-5"/>
     </net>
     <net code="7" name="/TarjetaSD/SCK1">
-      <node ref="U1" pin="J-7"/>
       <node ref="J1" pin="5"/>
+      <node ref="U1" pin="J-7"/>
       <node ref="TP19" pin="1"/>
     </net>
     <net code="8" name="/Display/SDA2">
-      <node ref="J2" pin="1"/>
-      <node ref="U1" pin="J-40"/>
       <node ref="TP8" pin="1"/>
+      <node ref="U1" pin="J-40"/>
+      <node ref="J2" pin="1"/>
       <node ref="R6" pin="2"/>
     </net>
     <net code="9" name="/Display/SCL2">
+      <node ref="R7" pin="2"/>
+      <node ref="U1" pin="J-41"/>
       <node ref="J2" pin="2"/>
       <node ref="TP9" pin="1"/>
-      <node ref="U1" pin="J-41"/>
-      <node ref="R7" pin="2"/>
     </net>
     <net code="10" name="/Zigbee/RXD1">
-      <node ref="MOD1" pin="2"/>
       <node ref="U1" pin="J-43"/>
       <node ref="TP10" pin="1"/>
+      <node ref="MOD1" pin="2"/>
     </net>
     <net code="11" name="/Zigbee/TXD1">
+      <node ref="TP11" pin="1"/>
       <node ref="MOD1" pin="3"/>
       <node ref="U1" pin="J-42"/>
-      <node ref="TP11" pin="1"/>
     </net>
     <net code="12" name="/Zigbee/CTS">
       <node ref="MOD1" pin="12"/>
-      <node ref="U1" pin="J-44"/>
       <node ref="TP12" pin="1"/>
+      <node ref="U1" pin="J-44"/>
     </net>
     <net code="13" name="/Zigbee/RTS">
-      <node ref="TP13" pin="1"/>
-      <node ref="U1" pin="J-49"/>
       <node ref="MOD1" pin="16"/>
+      <node ref="U1" pin="J-49"/>
+      <node ref="TP13" pin="1"/>
     </net>
     <net code="14" name="/Zigbee/SLEEP">
       <node ref="TP14" pin="1"/>
-      <node ref="U1" pin="J-47"/>
       <node ref="MOD1" pin="13"/>
+      <node ref="U1" pin="J-47"/>
     </net>
     <net code="15" name="/Zigbee/SLRQ">
-      <node ref="MOD1" pin="9"/>
       <node ref="U1" pin="J-48"/>
       <node ref="TP15" pin="1"/>
+      <node ref="MOD1" pin="9"/>
     </net>
     <net code="16" name="/TarjetaSD/MISO1">
       <node ref="U1" pin="J-6"/>
@@ -758,8 +744,8 @@
       <node ref="U1" pin="J-25"/>
     </net>
     <net code="18" name="/acc/SCL0">
-      <node ref="TP2" pin="1"/>
       <node ref="U2" pin="3"/>
+      <node ref="TP2" pin="1"/>
       <node ref="U1" pin="J-26"/>
     </net>
     <net code="19" name="/acc/INT">
@@ -769,256 +755,254 @@
     </net>
     <net code="20" name="/acc/FSYNC">
       <node ref="U1" pin="J-24"/>
-      <node ref="TP4" pin="1"/>
       <node ref="U2" pin="10"/>
-    </net>
-    <net code="21" name="+3V3">
-      <node ref="R3" pin="1"/>
-      <node ref="MOD1" pin="5"/>
-      <node ref="R2" pin="1"/>
-      <node ref="J3" pin="1"/>
-      <node ref="R4" pin="1"/>
-      <node ref="R5" pin="1"/>
-      <node ref="MOD1" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="U1" pin="J-28"/>
-      <node ref="J1" pin="4"/>
-      <node ref="TP22" pin="1"/>
-    </net>
-    <net code="22" name="Net-(U1-PadJ-21)">
-      <node ref="U1" pin="J-21"/>
-    </net>
-    <net code="23" name="Net-(U1-PadJ-12)">
-      <node ref="U1" pin="J-12"/>
-    </net>
-    <net code="24" name="Net-(U1-PadJ-13)">
-      <node ref="U1" pin="J-13"/>
-    </net>
-    <net code="25" name="Net-(U1-PadJ-14)">
-      <node ref="U1" pin="J-14"/>
-    </net>
-    <net code="26" name="Net-(U1-PadJ-15)">
-      <node ref="U1" pin="J-15"/>
-    </net>
-    <net code="27" name="Net-(U1-PadJ-16)">
-      <node ref="U1" pin="J-16"/>
-    </net>
-    <net code="28" name="Net-(U1-PadJ-17)">
-      <node ref="U1" pin="J-17"/>
-    </net>
-    <net code="29" name="Net-(U1-PadJ-18)">
-      <node ref="U1" pin="J-18"/>
-    </net>
-    <net code="30" name="Net-(U1-PadJ-19)">
-      <node ref="U1" pin="J-19"/>
-    </net>
-    <net code="31" name="Net-(U1-PadJ-20)">
-      <node ref="U1" pin="J-20"/>
-    </net>
-    <net code="32" name="Net-(U1-PadJ-4)">
-      <node ref="U1" pin="J-4"/>
-    </net>
-    <net code="33" name="Net-(U1-PadJ-22)">
-      <node ref="U1" pin="J-22"/>
-    </net>
-    <net code="34" name="Net-(U1-PadJ-23)">
-      <node ref="U1" pin="J-23"/>
-    </net>
-    <net code="35" name="Net-(U1-PadPD1)">
-      <node ref="U1" pin="PD1"/>
-    </net>
-    <net code="36" name="Net-(U1-PadPD2)">
-      <node ref="U1" pin="PD2"/>
-    </net>
-    <net code="37" name="Net-(U1-PadJ-38)">
-      <node ref="U1" pin="J-38"/>
-    </net>
-    <net code="38" name="Net-(U1-PadJ-53)">
-      <node ref="U1" pin="J-53"/>
-    </net>
-    <net code="39" name="Net-(U1-PadJ-52)">
-      <node ref="U1" pin="J-52"/>
-    </net>
-    <net code="40" name="Net-(U1-PadJ-51)">
-      <node ref="U1" pin="J-51"/>
-    </net>
-    <net code="41" name="Net-(U1-PadJ-50)">
-      <node ref="U1" pin="J-50"/>
-    </net>
-    <net code="42" name="Net-(U1-PadJ-46)">
-      <node ref="U1" pin="J-46"/>
-    </net>
-    <net code="43" name="Net-(U1-PadJ-45)">
-      <node ref="U1" pin="J-45"/>
-    </net>
-    <net code="44" name="Net-(U1-PadPD3)">
-      <node ref="U1" pin="PD3"/>
-    </net>
-    <net code="45" name="Net-(U1-PadJ-37)">
-      <node ref="U1" pin="J-37"/>
-    </net>
-    <net code="46" name="Net-(U1-PadJ-36)">
-      <node ref="U1" pin="J-36"/>
-    </net>
-    <net code="47" name="Net-(U1-PadJ-35)">
-      <node ref="U1" pin="J-35"/>
-    </net>
-    <net code="48" name="Net-(U1-PadJ-34)">
-      <node ref="U1" pin="J-34"/>
-    </net>
-    <net code="49" name="Net-(U1-PadJ-33)">
-      <node ref="U1" pin="J-33"/>
-    </net>
-    <net code="50" name="Net-(U1-PadJ-32)">
-      <node ref="U1" pin="J-32"/>
-    </net>
-    <net code="51" name="Net-(U1-PadJ-2)">
-      <node ref="U1" pin="J-2"/>
-    </net>
-    <net code="52" name="Net-(U1-PadJ-3)">
-      <node ref="U1" pin="J-3"/>
-    </net>
-    <net code="53" name="Net-(U1-PadPD12)">
-      <node ref="U1" pin="PD12"/>
-    </net>
-    <net code="54" name="Net-(U1-PadPD4)">
-      <node ref="U1" pin="PD4"/>
-    </net>
-    <net code="55" name="Net-(U1-PadPD5)">
-      <node ref="U1" pin="PD5"/>
-    </net>
-    <net code="56" name="Net-(U1-PadPD6)">
-      <node ref="U1" pin="PD6"/>
-    </net>
-    <net code="57" name="Net-(U1-PadPD7)">
-      <node ref="U1" pin="PD7"/>
-    </net>
-    <net code="58" name="Net-(U1-PadPD8)">
-      <node ref="U1" pin="PD8"/>
-    </net>
-    <net code="59" name="Net-(U1-PadPD9)">
-      <node ref="U1" pin="PD9"/>
-    </net>
-    <net code="60" name="Net-(U1-PadPD10)">
-      <node ref="U1" pin="PD10"/>
-    </net>
-    <net code="61" name="Net-(U1-PadPD11)">
-      <node ref="U1" pin="PD11"/>
-    </net>
-    <net code="62" name="Net-(U1-PadPD13)">
-      <node ref="U1" pin="PD13"/>
-    </net>
-    <net code="63" name="Net-(U1-PadPD14)">
-      <node ref="U1" pin="PD14"/>
-    </net>
-    <net code="64" name="Net-(U1-PadPD15)">
-      <node ref="U1" pin="PD15"/>
-    </net>
-    <net code="65" name="Net-(U1-PadPD16)">
-      <node ref="U1" pin="PD16"/>
-    </net>
-    <net code="66" name="Net-(U1-PadPD17)">
-      <node ref="U1" pin="PD17"/>
-    </net>
-    <net code="67" name="Net-(U1-PadPD18)">
-      <node ref="U1" pin="PD18"/>
-    </net>
-    <net code="68" name="Net-(U1-PadPD19)">
-      <node ref="U1" pin="PD19"/>
-    </net>
-    <net code="69" name="Net-(U1-PadJ-29)">
-      <node ref="U1" pin="J-29"/>
-    </net>
-    <net code="70" name="Net-(U1-PadJ-30)">
-      <node ref="U1" pin="J-30"/>
-    </net>
-    <net code="71" name="Net-(U1-PadJ-31)">
-      <node ref="U1" pin="J-31"/>
-    </net>
-    <net code="72" name="Net-(MOD1-Pad20)">
-      <node ref="MOD1" pin="20"/>
-    </net>
-    <net code="73" name="Net-(MOD1-Pad19)">
-      <node ref="MOD1" pin="19"/>
-    </net>
-    <net code="74" name="Net-(MOD1-Pad18)">
-      <node ref="MOD1" pin="18"/>
-    </net>
-    <net code="75" name="Net-(MOD1-Pad17)">
-      <node ref="MOD1" pin="17"/>
-    </net>
-    <net code="76" name="Net-(MOD1-Pad15)">
-      <node ref="MOD1" pin="15"/>
-    </net>
-    <net code="77" name="Net-(MOD1-Pad11)">
-      <node ref="MOD1" pin="11"/>
-    </net>
-    <net code="78" name="Net-(MOD1-Pad8)">
-      <node ref="MOD1" pin="8"/>
-    </net>
-    <net code="79" name="Net-(MOD1-Pad7)">
-      <node ref="MOD1" pin="7"/>
-    </net>
-    <net code="80" name="Net-(MOD1-Pad4)">
-      <node ref="MOD1" pin="4"/>
-    </net>
-    <net code="81" name="Net-(U2-Pad5)">
-      <node ref="U2" pin="5"/>
-    </net>
-    <net code="82" name="Net-(U2-Pad6)">
-      <node ref="U2" pin="6"/>
-    </net>
-    <net code="83" name="Net-(R1-Pad2)">
-      <node ref="R1" pin="2"/>
-      <node ref="U2" pin="7"/>
-    </net>
-    <net code="84" name="Net-(U2-Pad9)">
-      <node ref="U2" pin="9"/>
-    </net>
-    <net code="85" name="/TarjetaSD/data2">
-      <node ref="J1" pin="9"/>
-      <node ref="R2" pin="2"/>
-    </net>
-    <net code="86" name="Net-(J1-Pad11)">
-      <node ref="J1" pin="11"/>
-    </net>
-    <net code="87" name="Net-(J1-Pad13)">
-      <node ref="J1" pin="13"/>
-    </net>
-    <net code="88" name="Net-(J1-Pad10)">
-      <node ref="J1" pin="10"/>
-    </net>
-    <net code="89" name="/TarjetaSD/data1">
-      <node ref="J1" pin="8"/>
-      <node ref="R3" pin="2"/>
-    </net>
-    <net code="90" name="+5V">
-      <node ref="J3" pin="3"/>
-      <node ref="J2" pin="3"/>
-      <node ref="R7" pin="1"/>
-      <node ref="TP21" pin="1"/>
-      <node ref="R6" pin="1"/>
-      <node ref="R1" pin="1"/>
-      <node ref="U2" pin="1"/>
-      <node ref="U3" pin="2"/>
-    </net>
-    <net code="91" name="GND">
+      <node ref="TP4" pin="1"/>
+    </net>
+    <net code="21" name="GND">
+      <node ref="U3" pin="5"/>
+      <node ref="MOD1" pin="10"/>
+      <node ref="U3" pin="1"/>
       <node ref="U2" pin="2"/>
-      <node ref="J3" pin="4"/>
+      <node ref="MOD1" pin="14"/>
+      <node ref="J2" pin="4"/>
       <node ref="J3" pin="2"/>
-      <node ref="J1" pin="3"/>
+      <node ref="J3" pin="4"/>
+      <node ref="J1" pin="12"/>
       <node ref="C2" pin="2"/>
       <node ref="C1" pin="2"/>
-      <node ref="J1" pin="12"/>
       <node ref="J1" pin="6"/>
+      <node ref="J1" pin="3"/>
       <node ref="U1" pin="J-1"/>
-      <node ref="MOD1" pin="14"/>
       <node ref="U1" pin="J-54"/>
-      <node ref="U3" pin="1"/>
-      <node ref="U3" pin="5"/>
-      <node ref="J2" pin="4"/>
-      <node ref="MOD1" pin="10"/>
+    </net>
+    <net code="22" name="+3V3">
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="J1" pin="4"/>
+      <node ref="J3" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="MOD1" pin="1"/>
+      <node ref="MOD1" pin="5"/>
+      <node ref="U1" pin="J-28"/>
+    </net>
+    <net code="23" name="Net-(U1-PadJ-21)">
+      <node ref="U1" pin="J-21"/>
+    </net>
+    <net code="24" name="Net-(U1-PadJ-12)">
+      <node ref="U1" pin="J-12"/>
+    </net>
+    <net code="25" name="Net-(U1-PadJ-13)">
+      <node ref="U1" pin="J-13"/>
+    </net>
+    <net code="26" name="Net-(U1-PadJ-14)">
+      <node ref="U1" pin="J-14"/>
+    </net>
+    <net code="27" name="Net-(U1-PadJ-15)">
+      <node ref="U1" pin="J-15"/>
+    </net>
+    <net code="28" name="Net-(U1-PadJ-16)">
+      <node ref="U1" pin="J-16"/>
+    </net>
+    <net code="29" name="Net-(U1-PadJ-17)">
+      <node ref="U1" pin="J-17"/>
+    </net>
+    <net code="30" name="Net-(U1-PadJ-18)">
+      <node ref="U1" pin="J-18"/>
+    </net>
+    <net code="31" name="Net-(U1-PadJ-19)">
+      <node ref="U1" pin="J-19"/>
+    </net>
+    <net code="32" name="Net-(U1-PadJ-20)">
+      <node ref="U1" pin="J-20"/>
+    </net>
+    <net code="33" name="Net-(U1-PadJ-4)">
+      <node ref="U1" pin="J-4"/>
+    </net>
+    <net code="34" name="Net-(U1-PadJ-22)">
+      <node ref="U1" pin="J-22"/>
+    </net>
+    <net code="35" name="Net-(U1-PadJ-23)">
+      <node ref="U1" pin="J-23"/>
+    </net>
+    <net code="36" name="Net-(U1-PadPD1)">
+      <node ref="U1" pin="PD1"/>
+    </net>
+    <net code="37" name="Net-(U1-PadPD2)">
+      <node ref="U1" pin="PD2"/>
+    </net>
+    <net code="38" name="Net-(U1-PadJ-38)">
+      <node ref="U1" pin="J-38"/>
+    </net>
+    <net code="39" name="Net-(U1-PadJ-53)">
+      <node ref="U1" pin="J-53"/>
+    </net>
+    <net code="40" name="Net-(U1-PadJ-52)">
+      <node ref="U1" pin="J-52"/>
+    </net>
+    <net code="41" name="Net-(U1-PadJ-51)">
+      <node ref="U1" pin="J-51"/>
+    </net>
+    <net code="42" name="Net-(U1-PadJ-50)">
+      <node ref="U1" pin="J-50"/>
+    </net>
+    <net code="43" name="Net-(U1-PadJ-46)">
+      <node ref="U1" pin="J-46"/>
+    </net>
+    <net code="44" name="Net-(U1-PadJ-45)">
+      <node ref="U1" pin="J-45"/>
+    </net>
+    <net code="45" name="Net-(U1-PadPD3)">
+      <node ref="U1" pin="PD3"/>
+    </net>
+    <net code="46" name="Net-(U1-PadJ-37)">
+      <node ref="U1" pin="J-37"/>
+    </net>
+    <net code="47" name="Net-(U1-PadJ-36)">
+      <node ref="U1" pin="J-36"/>
+    </net>
+    <net code="48" name="Net-(U1-PadJ-35)">
+      <node ref="U1" pin="J-35"/>
+    </net>
+    <net code="49" name="Net-(U1-PadJ-34)">
+      <node ref="U1" pin="J-34"/>
+    </net>
+    <net code="50" name="Net-(U1-PadJ-33)">
+      <node ref="U1" pin="J-33"/>
+    </net>
+    <net code="51" name="Net-(U1-PadJ-32)">
+      <node ref="U1" pin="J-32"/>
+    </net>
+    <net code="52" name="Net-(U1-PadJ-2)">
+      <node ref="U1" pin="J-2"/>
+    </net>
+    <net code="53" name="Net-(U1-PadJ-3)">
+      <node ref="U1" pin="J-3"/>
+    </net>
+    <net code="54" name="Net-(U1-PadPD12)">
+      <node ref="U1" pin="PD12"/>
+    </net>
+    <net code="55" name="Net-(U1-PadPD4)">
+      <node ref="U1" pin="PD4"/>
+    </net>
+    <net code="56" name="Net-(U1-PadPD5)">
+      <node ref="U1" pin="PD5"/>
+    </net>
+    <net code="57" name="Net-(U1-PadPD6)">
+      <node ref="U1" pin="PD6"/>
+    </net>
+    <net code="58" name="Net-(U1-PadPD7)">
+      <node ref="U1" pin="PD7"/>
+    </net>
+    <net code="59" name="Net-(U1-PadPD8)">
+      <node ref="U1" pin="PD8"/>
+    </net>
+    <net code="60" name="Net-(U1-PadPD9)">
+      <node ref="U1" pin="PD9"/>
+    </net>
+    <net code="61" name="Net-(U1-PadPD10)">
+      <node ref="U1" pin="PD10"/>
+    </net>
+    <net code="62" name="Net-(U1-PadPD11)">
+      <node ref="U1" pin="PD11"/>
+    </net>
+    <net code="63" name="Net-(U1-PadPD13)">
+      <node ref="U1" pin="PD13"/>
+    </net>
+    <net code="64" name="Net-(U1-PadPD14)">
+      <node ref="U1" pin="PD14"/>
+    </net>
+    <net code="65" name="Net-(U1-PadPD15)">
+      <node ref="U1" pin="PD15"/>
+    </net>
+    <net code="66" name="Net-(U1-PadPD16)">
+      <node ref="U1" pin="PD16"/>
+    </net>
+    <net code="67" name="Net-(U1-PadPD17)">
+      <node ref="U1" pin="PD17"/>
+    </net>
+    <net code="68" name="Net-(U1-PadPD18)">
+      <node ref="U1" pin="PD18"/>
+    </net>
+    <net code="69" name="Net-(U1-PadPD19)">
+      <node ref="U1" pin="PD19"/>
+    </net>
+    <net code="70" name="Net-(U1-PadJ-29)">
+      <node ref="U1" pin="J-29"/>
+    </net>
+    <net code="71" name="Net-(U1-PadJ-30)">
+      <node ref="U1" pin="J-30"/>
+    </net>
+    <net code="72" name="Net-(U1-PadJ-31)">
+      <node ref="U1" pin="J-31"/>
+    </net>
+    <net code="73" name="Net-(MOD1-Pad20)">
+      <node ref="MOD1" pin="20"/>
+    </net>
+    <net code="74" name="Net-(MOD1-Pad19)">
+      <node ref="MOD1" pin="19"/>
+    </net>
+    <net code="75" name="Net-(MOD1-Pad18)">
+      <node ref="MOD1" pin="18"/>
+    </net>
+    <net code="76" name="Net-(MOD1-Pad17)">
+      <node ref="MOD1" pin="17"/>
+    </net>
+    <net code="77" name="Net-(MOD1-Pad15)">
+      <node ref="MOD1" pin="15"/>
+    </net>
+    <net code="78" name="Net-(MOD1-Pad11)">
+      <node ref="MOD1" pin="11"/>
+    </net>
+    <net code="79" name="Net-(MOD1-Pad8)">
+      <node ref="MOD1" pin="8"/>
+    </net>
+    <net code="80" name="Net-(MOD1-Pad7)">
+      <node ref="MOD1" pin="7"/>
+    </net>
+    <net code="81" name="Net-(MOD1-Pad4)">
+      <node ref="MOD1" pin="4"/>
+    </net>
+    <net code="82" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="83" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="84" name="Net-(R1-Pad2)">
+      <node ref="U2" pin="7"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="85" name="Net-(U2-Pad9)">
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="86" name="/TarjetaSD/data2">
+      <node ref="R2" pin="2"/>
+      <node ref="J1" pin="9"/>
+    </net>
+    <net code="87" name="Net-(J1-Pad11)">
+      <node ref="J1" pin="11"/>
+    </net>
+    <net code="88" name="Net-(J1-Pad13)">
+      <node ref="J1" pin="13"/>
+    </net>
+    <net code="89" name="Net-(J1-Pad10)">
+      <node ref="J1" pin="10"/>
+    </net>
+    <net code="90" name="/TarjetaSD/data1">
+      <node ref="R3" pin="2"/>
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="91" name="+5V">
+      <node ref="R1" pin="1"/>
+      <node ref="J3" pin="3"/>
+      <node ref="J2" pin="3"/>
+      <node ref="R6" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U3" pin="2"/>
+      <node ref="R7" pin="1"/>
     </net>
   </nets>
 </export>

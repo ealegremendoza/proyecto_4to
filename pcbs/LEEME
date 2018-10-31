@@ -1,7 +1,5 @@
 PROYECTOS DE KICAD 4.0.7
 /misc 	->	footprints, libs.
-/pdf 	->	pdfs de las placas
-/pngs	->	pdfs convertidos a pngs solo para visualización ráída en GITHUB.
 
 /pbase 	->	placa base con LPCXPRESSO LPC1769 REVC
 /pbase-ino ->	placa base con ARDUINO MEGA

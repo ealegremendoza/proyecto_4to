@@ -42,169 +42,171 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 8
-Title "Zigbee"
-Date "2018-09-10"
+Title "Diagrama de bloques "
+Date "2018-10-30"
 Rev "A"
 Comp "UTN - FRBA"
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "Autores: Alegre M. E., Bautista L., Tarazona L."
+Comment2 "Antena incorporada. UART"
+Comment3 "XBEE / XBEE-PRO"
+Comment4 "Comunicación Zigbee"
 $EndDescr
 $Comp
 L +3V3 #PWR04
 U 1 1 5B95CA2F
-P 5850 2950
-F 0 "#PWR04" H 5850 2800 50  0001 C CNN
-F 1 "+3V3" H 5850 3090 50  0000 C CNN
-F 2 "" H 5850 2950 50  0001 C CNN
-F 3 "" H 5850 2950 50  0001 C CNN
-	1    5850 2950
+P 5500 3150
+F 0 "#PWR04" H 5500 3000 50  0001 C CNN
+F 1 "+3V3" H 5500 3290 50  0000 C CNN
+F 2 "" H 5500 3150 50  0001 C CNN
+F 3 "" H 5500 3150 50  0001 C CNN
+	1    5500 3150
 	1    0    0    -1  
 $EndComp
 $Comp
 L +3V3 #PWR05
 U 1 1 5B95CA45
-P 4600 3300
-F 0 "#PWR05" H 4600 3150 50  0001 C CNN
-F 1 "+3V3" H 4600 3440 50  0000 C CNN
-F 2 "" H 4600 3300 50  0001 C CNN
-F 3 "" H 4600 3300 50  0001 C CNN
-	1    4600 3300
+P 4250 3500
+F 0 "#PWR05" H 4250 3350 50  0001 C CNN
+F 1 "+3V3" H 4250 3640 50  0000 C CNN
+F 2 "" H 4250 3500 50  0001 C CNN
+F 3 "" H 4250 3500 50  0001 C CNN
+	1    4250 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 3250 5850 2950
+	5500 3450 5500 3150
 Wire Wire Line
-	5150 3550 4600 3550
+	4800 3750 4250 3750
 Wire Wire Line
-	4600 3550 4600 3300
+	4250 3750 4250 3500
 $Comp
 L GND #PWR06
 U 1 1 5B95CB17
-P 4600 4250
-F 0 "#PWR06" H 4600 4000 50  0001 C CNN
-F 1 "GND" H 4600 4100 50  0000 C CNN
-F 2 "" H 4600 4250 50  0001 C CNN
-F 3 "" H 4600 4250 50  0001 C CNN
-	1    4600 4250
+P 4250 4450
+F 0 "#PWR06" H 4250 4200 50  0001 C CNN
+F 1 "GND" H 4250 4300 50  0000 C CNN
+F 2 "" H 4250 4450 50  0001 C CNN
+F 3 "" H 4250 4450 50  0001 C CNN
+	1    4250 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 3850 4600 3850
+	4800 4050 4250 4050
 Wire Wire Line
-	4600 3850 4600 4250
+	4250 4050 4250 4450
 Wire Wire Line
-	5150 3450 4900 3450
+	4800 3650 4550 3650
 Wire Wire Line
-	5150 3750 4900 3750
+	4800 3950 4550 3950
 Wire Wire Line
-	6550 3450 6750 3450
+	6200 3650 6400 3650
 Wire Wire Line
-	6550 3650 6750 3650
+	6200 3850 6400 3850
 Wire Wire Line
-	6550 3950 6750 3950
+	6200 4150 6400 4150
 Wire Wire Line
-	6550 4050 6750 4050
+	6200 4250 6400 4250
 Wire Wire Line
-	6550 4250 6750 4250
+	6200 4450 6400 4450
 $Comp
 L GND #PWR07
 U 1 1 5B95CC26
-P 5750 4550
-F 0 "#PWR07" H 5750 4300 50  0001 C CNN
-F 1 "GND" H 5750 4400 50  0000 C CNN
-F 2 "" H 5750 4550 50  0001 C CNN
-F 3 "" H 5750 4550 50  0001 C CNN
-	1    5750 4550
+P 5400 4750
+F 0 "#PWR07" H 5400 4500 50  0001 C CNN
+F 1 "GND" H 5400 4600 50  0000 C CNN
+F 2 "" H 5400 4750 50  0001 C CNN
+F 3 "" H 5400 4750 50  0001 C CNN
+	1    5400 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 4550 5750 4450
-NoConn ~ 6550 3750
-NoConn ~ 6550 3850
-NoConn ~ 6550 3550
-NoConn ~ 5150 4250
-NoConn ~ 5150 4150
-NoConn ~ 5150 4050
-NoConn ~ 5150 3950
-Text Label 4900 3450 2    60   ~ 0
+	5400 4750 5400 4650
+NoConn ~ 6200 3950
+NoConn ~ 6200 4050
+NoConn ~ 6200 3750
+NoConn ~ 4800 4450
+NoConn ~ 4800 4350
+NoConn ~ 4800 4250
+NoConn ~ 4800 4150
+Text Label 4550 3650 2    60   ~ 0
 TXD1
-Text Label 4900 3750 2    60   ~ 0
+Text Label 4550 3950 2    60   ~ 0
 SleepRQ
-Text Label 6750 3450 0    60   ~ 0
+Text Label 6400 3650 0    60   ~ 0
 RXD1
-Text Label 6750 3650 0    60   ~ 0
+Text Label 6400 3850 0    60   ~ 0
 RSSI
-Text Label 6750 3950 0    60   ~ 0
+Text Label 6400 4150 0    60   ~ 0
 CTS
-Text Label 6750 4050 0    60   ~ 0
+Text Label 6400 4250 0    60   ~ 0
 SLEEP
-Text Label 6750 4250 0    60   ~ 0
+Text Label 6400 4450 0    60   ~ 0
 RTS
-NoConn ~ 6550 4150
+NoConn ~ 6200 4350
 Wire Wire Line
-	7600 3450 8100 3450
+	7250 3650 7750 3650
 Wire Wire Line
-	7600 3550 8100 3550
+	7250 3750 7750 3750
 Wire Wire Line
-	7600 3650 8100 3650
+	7250 3850 7750 3850
 Wire Wire Line
-	7600 3750 8100 3750
+	7250 3950 7750 3950
 Wire Wire Line
-	7600 3850 8100 3850
+	7250 4050 7750 4050
 Wire Wire Line
-	7600 3950 8100 3950
+	7250 4150 7750 4150
 Wire Wire Line
-	7600 4050 8100 4050
-Text Label 7600 3450 2    60   ~ 0
+	7250 4250 7750 4250
+Text Label 7250 3650 2    60   ~ 0
 RXD1
-Text Label 7600 3550 2    60   ~ 0
+Text Label 7250 3750 2    60   ~ 0
 TXD1
-Text Label 7600 3650 2    60   ~ 0
+Text Label 7250 3850 2    60   ~ 0
 SleepRQ
-Text Label 7600 3750 2    60   ~ 0
+Text Label 7250 3950 2    60   ~ 0
 SLEEP
-Text Label 7600 3850 2    60   ~ 0
+Text Label 7250 4050 2    60   ~ 0
 CTS
-Text Label 7600 3950 2    60   ~ 0
+Text Label 7250 4150 2    60   ~ 0
 RSSI
-Text Label 7600 4050 2    60   ~ 0
+Text Label 7250 4250 2    60   ~ 0
 RTS
-Text HLabel 8100 3450 2    60   Output ~ 0
+Text HLabel 7750 3650 2    60   Output ~ 0
 RXD1
-Text HLabel 8100 3550 2    60   Input ~ 0
+Text HLabel 7750 3750 2    60   Input ~ 0
 TXD1
-Text HLabel 8100 3650 2    60   Input ~ 0
+Text HLabel 7750 3850 2    60   Input ~ 0
 SLRQ
-Text HLabel 8100 3750 2    60   Output ~ 0
+Text HLabel 7750 3950 2    60   Output ~ 0
 SLEEP
-Text HLabel 8100 3850 2    60   Output ~ 0
+Text HLabel 7750 4050 2    60   Output ~ 0
 CTS
-Text HLabel 8100 3950 2    60   Output ~ 0
+Text HLabel 7750 4150 2    60   Output ~ 0
 RSSI
-Text HLabel 8100 4050 2    60   Input ~ 0
+Text HLabel 7750 4250 2    60   Input ~ 0
 RTS
 $Comp
 L XB24CZ7PIT-004 MOD1
 U 1 1 5B95E421
-P 5950 4050
-F 0 "MOD1" H 6200 4850 60  0000 L CNN
-F 1 "XB24CZ7PIT-004" H 5868 3698 60  0000 L CNN
-F 2 "footprints:xbee_xb24cz7pit_004" H 6150 4250 60  0001 L CNN
-F 3 "https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf" H 6150 4350 60  0001 L CNN
-F 4 "602-1557-ND" H 6150 4450 60  0001 L CNN "Digi-Key_PN"
-F 5 "XB24CZ7PIT-004" H 6150 4550 60  0001 L CNN "MPN"
-F 6 "RF/IF and RFID" H 6150 4650 60  0001 L CNN "Category"
-F 7 "RF Transceiver Modules" H 6150 4750 60  0001 L CNN "Family"
-F 8 "https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf" H 6150 4850 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/digi-international/XB24CZ7PIT-004/602-1557-ND/5322371" H 6150 4950 60  0001 L CNN "DK_Detail_Page"
-F 10 "RF TXRX MOD 802.15.4 TRACE ANT" H 6150 5050 60  0001 L CNN "Description"
-F 11 "Digi International" H 6150 5150 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6150 5250 60  0001 L CNN "Status"
-	1    5950 4050
+P 5600 4250
+F 0 "MOD1" H 5850 5050 60  0000 L CNN
+F 1 "XB24CZ7PIT-004" H 5518 3898 60  0000 L CNN
+F 2 "footprints:xbee_xb24cz7pit_004" H 5800 4450 60  0001 L CNN
+F 3 "https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf" H 5800 4550 60  0001 L CNN
+F 4 "602-1557-ND" H 5800 4650 60  0001 L CNN "Digi-Key_PN"
+F 5 "XB24CZ7PIT-004" H 5800 4750 60  0001 L CNN "MPN"
+F 6 "RF/IF and RFID" H 5800 4850 60  0001 L CNN "Category"
+F 7 "RF Transceiver Modules" H 5800 4950 60  0001 L CNN "Family"
+F 8 "https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf" H 5800 5050 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/digi-international/XB24CZ7PIT-004/602-1557-ND/5322371" H 5800 5150 60  0001 L CNN "DK_Detail_Page"
+F 10 "RF TXRX MOD 802.15.4 TRACE ANT" H 5800 5250 60  0001 L CNN "Description"
+F 11 "Digi International" H 5800 5350 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5800 5450 60  0001 L CNN "Status"
+	1    5600 4250
 	1    0    0    -1  
 $EndComp
-Text Notes 5300 2650 0    60   ~ 12
-Comunicación Zigbee
+Text Notes 3550 1750 0    157  ~ 31
+Comunicación inalámbrica - Zigbee
+Text Notes 5350 2100 0    60   ~ 0
+XBEE / XBEE-PRO
 $EndSCHEMATC

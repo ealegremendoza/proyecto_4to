@@ -7,7 +7,7 @@ Individual Components:
 Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,Category,DK_Datasheet_Link,DK_Detail_Page,Description,Digi-Key_PN,Family,MPN,Manufacturer,Status
 ,,C1,1uF x 16V,device:CP,Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand,,,,,,,,,,
 ,,C2,100n,device:C,Capacitors_SMD:C_0805_HandSoldering,,,,,,,,,,
-,,J1,SD_Card,conn:SD_Card,Connectors:SD_Card_Receptacle,,,,,,,,,,
+,,J1,SD_Card,conn:SD_Card,footprints:SD_TE_2041021_edit,,,,,,,,,,
 ,,J2,Conn_01x04,conn:Conn_01x04,Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm,,,,,,,,,,
 ,,J3,Conn_01x04,conn:Conn_01x04,Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm,,,,,,,,,,
 ,,MOD1,XB24CZ7PIT-004,dk_RF-Transceiver-Modules:XB24CZ7PIT-004,footprints:xbee_xb24cz7pit_004,https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf,RF/IF and RFID,https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf,/product-detail/en/digi-international/XB24CZ7PIT-004/602-1557-ND/5322371,RF TXRX MOD 802.15.4 TRACE ANT,602-1557-ND,RF Transceiver Modules,XB24CZ7PIT-004,Digi International,Active
@@ -29,7 +29,7 @@ Collated Components:
 Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,Category,DK_Datasheet_Link,DK_Detail_Page,Description,Digi-Key_PN,Family,MPN,Manufacturer,Status
 1,1,C1,1uF x 16V,device:CP,Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand,,,,,,,,,,
 2,1,C2,100n,device:C,Capacitors_SMD:C_0805_HandSoldering,,,,,,,,,,
-3,1,J1,SD_Card,conn:SD_Card,Connectors:SD_Card_Receptacle,,,,,,,,,,
+3,1,J1,SD_Card,conn:SD_Card,footprints:SD_TE_2041021_edit,,,,,,,,,,
 4,2,"J2, J3",Conn_01x04,conn:Conn_01x04,Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm,,,,,,,,,,
 5,1,MOD1,XB24CZ7PIT-004,dk_RF-Transceiver-Modules:XB24CZ7PIT-004,footprints:xbee_xb24cz7pit_004,https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf,RF/IF and RFID,https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf,/product-detail/en/digi-international/XB24CZ7PIT-004/602-1557-ND/5322371,RF TXRX MOD 802.15.4 TRACE ANT,602-1557-ND,RF Transceiver Modules,XB24CZ7PIT-004,Digi International,Active
 6,1,R1,0R,device:R,Resistors_SMD:R_0805_HandSoldering,,,,,,,,,,

@@ -44,14 +44,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
-Title "GPS"
-Date "2018-09-10"
+Title "TAUTOLOGICAL"
+Date "2018-10-30"
 Rev "A"
-Comp "UTN - FRBA"
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comp "UTN-FRBA"
+Comment1 "Autores: Alegre M. E., Bautista L., Tarazona L."
+Comment2 "Antena incorporada. 30x30 mm. Largo cable 30mm. UART."
+Comment3 "GPS EM506"
+Comment4 "Sport Tracker."
 $EndDescr
 $Comp
 L GPS_EM506 U3
@@ -111,6 +111,8 @@ Text HLabel 6600 3900 2    60   Output ~ 0
 RXD3
 Text HLabel 5200 3900 0    60   Input ~ 0
 TXD3
-Text Notes 5800 3250 0    60   ~ 12
+Text Notes 5650 2650 0    157  ~ 31
 GPS\n
+Text Notes 5650 2900 0    79   ~ 16
+EM-506
 $EndSCHEMATC

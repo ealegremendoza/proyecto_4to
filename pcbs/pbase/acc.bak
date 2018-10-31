@@ -42,14 +42,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 8
-Title "Acelerómetro"
-Date "2018-09-10"
+Title "Diagrama de bloques "
+Date "2018-10-30"
 Rev "A"
 Comp "UTN - FRBA"
-Comment1 "Si FSYNC no se usa ponerlo a GND o en LOW."
-Comment2 "R1 es un jumper. Quitarlo si se desea conservar la dirección que trae por defecto."
-Comment3 "Misma conexión que el MPU6050."
-Comment4 "Este acelerómetro ya incorpora un magnetómetro."
+Comment1 "Autores: Alegre M. E., Bautista L., Tarazona L."
+Comment2 ""
+Comment3 "Pin [1:8] compatible con MPU6050."
+Comment4 "Acelerómetro MPU9250. con magnetómetro. I2C."
 $EndDescr
 $Comp
 L +5V #PWR08
@@ -81,7 +81,7 @@ Text HLabel 5600 3750 0    60   BiDi ~ 0
 SDA0
 Text HLabel 5600 3650 0    60   BiDi ~ 0
 SCL0
-Text Notes 5800 2800 0    60   ~ 12
+Text Notes 5200 1850 0    157  ~ 31
 Acelerómetro
 Wire Wire Line
 	5800 3650 5600 3650
@@ -141,4 +141,26 @@ Text HLabel 5600 4350 0    60   Input ~ 0
 FSYNC
 Wire Wire Line
 	5600 4350 5800 4350
+Text Notes 700  7500 0    79   ~ 0
+Módulo acelerómetro MPU 9250. \n- El mismo consta con un acelerómetro, un giróscopo y un magnetómetro.\n- Información en los tres ejes X,Y,Z.\n- A travéz del pin 7 (ADO) puede modificarse su dirección llevándolo a VCC (5v).\n- R1 es un jumper. Quitarlo si se desea conservar la dirección que trae por defecto.\n- Si FSYNC no se usa ponerlo a GND o en LOW.\n- Cuenta con un regulador dropout para conectarse a 5v. Osea que puede conectarse de 3v3 a 5v.
+Text Notes 5700 2100 0    79   ~ 0
+MPU9250
+Text Notes 1150 4550 0    79   ~ 0
+En este caso, soldarlo o no, no trae complicación alguna.
+Wire Notes Line
+	4500 3750 4200 3750
+Wire Notes Line
+	4200 3750 4000 4200
+Wire Notes Line
+	4450 3700 4500 3750
+Wire Notes Line
+	4500 3750 4450 3800
+Wire Notes Line
+	600  7700 6900 7700
+Wire Notes Line
+	6900 7700 6900 6550
+Wire Notes Line
+	6900 6550 600  6550
+Wire Notes Line
+	600  6550 600  7700
 $EndSCHEMATC

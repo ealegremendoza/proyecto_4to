@@ -42,14 +42,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 8
-Title "Tarjeta SD"
-Date "2018-09-10"
+Title "Diagrama de bloques "
+Date "2018-10-30"
 Rev "A"
 Comp "UTN - FRBA"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Tarjeta SD"
 $EndDescr
 $Comp
 L SD_Card J1
@@ -57,7 +57,7 @@ U 1 1 5B95F793
 P 5650 3000
 F 0 "J1" H 5000 3550 50  0000 C CNN
 F 1 "SD_Card" H 6250 2450 50  0000 C CNN
-F 2 "Connectors:SD_Card_Receptacle" H 5850 3350 50  0001 C CNN
+F 2 "footprints:SD_TE_2041021_edit" H 5850 3350 50  0001 C CNN
 F 3 "" H 5650 3000 50  0001 C CNN
 	1    5650 3000
 	1    0    0    -1  
@@ -297,6 +297,6 @@ Text HLabel 6250 5100 2    60   Output ~ 0
 MISO1
 Text HLabel 6250 5200 2    60   Input ~ 0
 SCK1
-Text Notes 5550 2000 0    60   ~ 12
+Text Notes 5250 1550 0    157  ~ 31
 Tarjeta SD\n
 $EndSCHEMATC
