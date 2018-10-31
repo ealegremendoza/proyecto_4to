@@ -1,0 +1,27 @@
+Count:,31,,,,
+Components:,,,,,
+Item,Qty,Ref,Value,LibPart,Footprint
+,1,C1,1uF x 16V,CP,C SMD:CP_Tantalum_Case-A_EIA-3216-18
+,1,C2,100n,C,Capacitors_SMD:C_0805
+,1,C3,100u,CP,Capacitors_SMD:CP_Elec_6.3x5.3
+,1,C4,330u,CP,Capacitors_SMD:CP_Elec_10x10.5
+,1,D1,1N5817,D_Schottky,Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal
+,1,J1,SD Oupiin 9004-BA09W01C00A,SD_Card CONN,SD_TE_2041021_edit
+,2,"J2,SW1",Screw_Terminal_01x02,BORNERA-2 P5.08mm,TerminalBlock_bornier-2_P5.08mm
+,1,L1,330uH,L_Core_Ferrite,Choke_PK0810
+,1,R1,0R,R,R SMD:R_0805
+,2,"R2, R3",10K,R,R SMD:R_0805
+,3,"R4,R5,R6",1K8,R,R SMD:R_0805
+,3,"R7,R8,R9",3K3,R,R SMD:R_0805
+,1,U1,LM2575-3.3,lm2575:LM2575-3.3,TO_SOT_Packages_SMD:TO-263-5_TabPin3
+,1,U3,GPS_EM506,GPS_EM506,Conn JST_SH_SM06B-SRSS-TB_06x1.00mm_Angled
+,2,,TIRA PIN MACHO 1x26 P2.54mm,TIRA PIN MACHO 1x26 P2.54mm,Para arduino MEGA
+,1,,TIRA PIN MACHO 2X20 P2.54mm,TIRA PIN MACHO 2X20 P2.54mm,Para arduino MEGA
+,1,,TIRA PIN HEMBRA 2X05 P2.54mm,TIRA PIN HEMBRA 2X05 P2.54mm,Para arduino MEGA
+,2,,TIRA PIN HEMBRA 2X10 P2mm,TIRA PIN HEMBRA 2X10 P2mm,Para XBEE. Tamb pueden ser 2 tiras 1x10 P2mm
+,1,,TIRA PIN HEMBRA 1X10 P2.54mm,TIRA PIN HEMBRA 1X10 P2.54mm,Para acelerómetro
+,,,,,
+,1,MOD1,XBEE/XBEE-PRO,XBE / XBEE-PRO,xbee_xb24cz7pit_004
+,1,U2,acc_mpu9250_board,acc_mpu9250_board,mpu9250_board
+,1,,GPS_EM506,gps em506,gps em506
+,1,XA1,Arduino_Mega2560_Shield,arduino:Arduino_Mega2560_Shield,Arduino_Mega2560_Shield_flippedONtop
