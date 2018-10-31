@@ -1,24 +1,22 @@
 Count:,22,,,,
 Comp:,,,,,
 Item,Qty,Ref,Value,LibPart,Footprint
-1,1,C1,1uF x 16V,CP,C SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand
-2,1,C2,100n,C,C SMD:C_0805_HandSoldering
-3,1,J1,SD Oupiin 9004-BA09W01C00A,conn:SD_Card,SD_TE_2041021_edit
-4,1,R1,0R,R,R SMD:R_0805_HandSoldering
-5,2,"R2, R3",10K,R,R SMD:R_0805_HandSoldering
-6,2,"R4, R5",33K,R,R SMD:R_0805_HandSoldering
-7,1,R6,RD1,R,R SMD:R_0805_HandSoldering
-8,1,R7,RD2,R,R SMD:R_0805_HandSoldering
-9,1,U3,GPS_EM506,GPS_EM506,Conn JST_SH_SM06B-SRSS-TB_06x1.00mm_Angled
-10,1,,Conn_01x10,PINES HEMBRA 1X10 p2.54mm,Para el acelerómetro
-11,2,,Conn_01x27,PINES HEMBRA 1X27 p2.54mm,Para los laterales del LPCXpresso LPC1769
-12,2,"J2, J3",Conn_01x04,PINES HEMBRA 1X04 p2.54mm,Socket_Strip_Straight_1x04_Pitch2.54mm
-13,2,,Conn_02x10,PINES HEMBRA 2X10 p2mm,Para el zigbee. Si no se consigue ? 2 TIRAS PINES HEMBRA 1X10
+,1,C1,1uF x 16V,CP,C SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand
+,1,C2,100n,C,C SMD:C_0805_HandSoldering
+,1,J1,SD Oupiin 9004-BA09W01C00A,conn:SD_Card,SD_TE_2041021_edit
+,1,R1,0R,R,R SMD:R_0805_HandSoldering
+,2,"R2, R3",10K,R,R SMD:R_0805_HandSoldering
+,2,"R4, R5",33K,R,R SMD:R_0805_HandSoldering
+,1,R6,RD1,R,R SMD:R_0805_HandSoldering
+,1,R7,RD2,R,R SMD:R_0805_HandSoldering
+,1,U3,GPS_EM506,GPS_EM506,Conn JST_SH_SM06B-SRSS-TB_06x1.00mm_Angled
+,2,,Conn_02x10,PINES HEMBRA 2X10 p2mm,Para el zigbee. Si no se consigue ? 2 TIRAS PINES HEMBRA 1X10
+,2,,PINES HEMBRA 1X40 P2.54mm,PINES HEMBRA 1X40 P2.54mm,"Para lpc1769,acelerómetro, PWR y display."
 ,,,,,
-14,1,U1,LPCXpresso_LPC1769_revc,LPCXpresso_LPC1769_revc,lpc1769_board_revC
-15,1,U2,acc_mpu9250_board,acc_mpu9250_board,mpu9250_board
-16,1,U3.1,GPS_EM506,GPS_EM506,GPS EM506
-17,1,MOD1,XB24CZ7PIT-004,XBEE / XBEE-PRO,xbee_xb24cz7pit_004
+,1,U1,LPCXpresso_LPC1769_revc,LPCXpresso_LPC1769_revc,lpc1769_board_revC
+,1,U2,acc_mpu9250_board,acc_mpu9250_board,mpu9250_board
+,1,U3.1,GPS_EM506,GPS_EM506,GPS EM506
+,1,MOD1,XB24CZ7PIT-004,XBEE / XBEE-PRO,xbee_xb24cz7pit_004
 ,,,,,
 ,,,,,
 ,,,,,

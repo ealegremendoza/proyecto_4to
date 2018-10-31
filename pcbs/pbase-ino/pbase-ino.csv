@@ -15,11 +15,10 @@ Item,Qty,Ref,Value,LibPart,Footprint
 ,3,"R7,R8,R9",3K3,R,R SMD:R_0805
 ,1,U1,LM2575-3.3,lm2575:LM2575-3.3,TO_SOT_Packages_SMD:TO-263-5_TabPin3
 ,1,U3,GPS_EM506,GPS_EM506,Conn JST_SH_SM06B-SRSS-TB_06x1.00mm_Angled
-,2,,TIRA PIN MACHO 1x26 P2.54mm,TIRA PIN MACHO 1x26 P2.54mm,Para arduino MEGA
-,1,,TIRA PIN MACHO 2X20 P2.54mm,TIRA PIN MACHO 2X20 P2.54mm,Para arduino MEGA
+,2,,TIRA PIN MACHO 1x40 P2.54mm,(1x26)+(1x26)+(1x10),Para arduino MEGA y acelerómetro mpu9250
+,1,,TIRA PIN MACHO 2X40 P2.54mm,Necesita 1 tira de 2x20,Para arduino MEGA
 ,1,,TIRA PIN HEMBRA 2X05 P2.54mm,TIRA PIN HEMBRA 2X05 P2.54mm,Para arduino MEGA
 ,2,,TIRA PIN HEMBRA 2X10 P2mm,TIRA PIN HEMBRA 2X10 P2mm,Para XBEE. Tamb pueden ser 2 tiras 1x10 P2mm
-,1,,TIRA PIN HEMBRA 1X10 P2.54mm,TIRA PIN HEMBRA 1X10 P2.54mm,Para acelerómetro
 ,,,,,
 ,1,MOD1,XBEE/XBEE-PRO,XBE / XBEE-PRO,xbee_xb24cz7pit_004
 ,1,U2,acc_mpu9250_board,acc_mpu9250_board,mpu9250_board
