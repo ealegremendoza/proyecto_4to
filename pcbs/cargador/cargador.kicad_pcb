@@ -1,9 +1,9 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.7-e2-6376~58~ubuntu16.04.1)
 
   (general
-    (links 69)
+    (links 0)
     (no_connects 0)
-    (area 30 37.525 279.285709 177.75)
+    (area 22.098 37.525 279.285709 189.136)
     (thickness 1.6)
     (drawings 36)
     (tracks 237)
@@ -25,8 +25,8 @@
   )
 
   (layers
-    (0 F.Cu signal hide)
-    (31 B.Cu signal hide)
+    (0 F.Cu signal)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -1831,7 +1831,7 @@
   (gr_text "MÓDULO CARGADOR DE BATERÍAS DE LI-ION" (at 145 40) (layer Cmts.User)
     (effects (font (size 3 3) (thickness 0.75)))
   )
-  (gr_text "VALORES:\nC1 = 10uF (Tantalio 3216)\nC2 = 0.1uF\nC3 = 0.22uF\nC4 = 1uF\nC5 = 100uF (Electrolítico)\nC6 = 0.47uF (Tantalio 3216)\nC7 = 47uF (Tantalio 6032)\nC8 = 330uF 50v (Electrolítico)\nC9 = 10pF\nD1 = LED 1206\nD2 = 1N5817\nL1 = 330uH CHOKE PK0810\nR1 = 0.1 R\nR2 = 120 R\nR3 = 1K\nR4 = 470 R\nTH1 = 10K\nU1 = BQ24004. HTSSOP-20-1EP_4.4x6.5mm_Pitch0.65mm_ThermalPad\nU2 = LM2940 SOT-233-3pin (SMD)\nU3 = LM2575 TO-263-5pin (SMD)" (at 197 96) (layer Cmts.User)
+  (gr_text "VALORES:\nC1 = 10uF (Tantalio 3216)\nC2 = 0.1uF\nC3 = 0.22uF\nC4 = 1uF\nC5 = 100uF (Electrolítico)\nC6 = 0.47uF (Tantalio 3216)\nC7 = 47uF (Tantalio 6032)\nC8 = 330uF 50v (Electrolítico)\nC9 = 10pF\nD1 = LED 1206\nD2 = 1N5817\nL1 = 330uH CHOKE PK0810\nR1 = 0.1 R\nR2 = 120 R\nR3 = 1K\nR4 = 470 R\nTH1 = 10K, ANCHO PATA 0.7 o menos\nU1 = BQ24004. HTSSOP-20-1EP_4.4x6.5mm_Pitch0.65mm_ThermalPad\nU2 = LM2940 SOT-233-3pin (SMD)\nU3 = LM2575 TO-263-5pin (SMD)" (at 197 96) (layer Cmts.User)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (dimension 55 (width 0.3) (layer Dwgs.User)
@@ -1846,7 +1846,7 @@
     (arrow2a (pts (xy 169 133) (xy 167.873496 132.413579)))
     (arrow2b (pts (xy 169 133) (xy 167.873496 133.586421)))
   )
-  (gr_text "IMPORTANTE:\n- TH1: TERMISTOR: Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical.\n- R1: Resistors_SMD:R_2512_HandSoldering.\n- R2,R3 y R4 son 0805.\n- J1:  BARREL JACK (o barrel jack cableado mejor para colocar en la caja.\n- C1: CP_Tantalum_Case-A_EIA-3216-18\n- C2, C3 , C4 y C9 son 0805.\n- C5: CP_Elec_6.3x5.3.\n- C6: CP_Tantalum_Case-A_EIA-3216-18\n- C7: CP_Tantalum_Case-C_EIA-6032-28\n- C8: CP_Elec_6.3x7.7\n- D1: LED 1206. Tomando como referencia esta vista de la placa\n el ANODO(+) se conecta a la resistencia R4 y el CATODO(-) al bq24004.\n- D2: Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal\n- L1: Choke_PK0810\n- U2: LM2940: SOT-223-3_TabPin2\n- U3: LM2575: TO-263-5_TabPin3" (at 30 156) (layer Cmts.User)
+  (gr_text "IMPORTANTE:\n- TH1: TERMISTOR: Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical.\n- R1: Resistors_SMD:R_2512_HandSoldering.\n- R2,R3 y R4 son 0805.\n- J1:  BARREL JACK (o barrel jack cableado mejor para colocar en la caja.\n- C1: CP_Tantalum_Case-A_EIA-3216-18\n- C2, C3 , C4 y C9 son 0805.\n- C5: CP_Elec_6.3x5.3.\n- C6: CP_Tantalum_Case-A_EIA-3216-18\n- C7: CP_Tantalum_Case-C_EIA-6032-28\n- C8: CP_Elec_6.3x7.7\n- D1: LED 1206. Tomando como referencia esta vista de la placa\n el ANODO(+) se conecta a la resistencia R4 y el CATODO(-) al bq24004.\n- D2: Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal\n- L1: Choke_PK0810\n- U2: LM2940: SOT-223-3_TabPin2\n- U3: LM2575: TO-263-5_TabPin3" (at 22.098 167.386) (layer Cmts.User)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (gr_text "Alegre \nBautista\nTarazona" (at 133.22 115.316) (layer B.Cu)

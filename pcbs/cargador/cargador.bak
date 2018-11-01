@@ -238,4 +238,6 @@ Text Notes 5600 2250 0    60   ~ 0
 BQ24004
 Text Notes 4400 2050 0    79   ~ 16
 Para conectar con la placa base PER4MANCE.
+Text Notes 2150 4000 0    60   ~ 0
+VIN: 8.4V - 10 V
 $EndSCHEMATC

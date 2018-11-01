@@ -172,6 +172,233 @@ F 3 "" H 6350 4150 50  0001 C CNN
 	1    6350 4150
 	1    0    0    -1  
 $EndComp
+$Comp
+L R R2
+U 1 1 5B91CA6F
+P 6150 4350
+F 0 "R2" V 6230 4350 50  0000 C CNN
+F 1 "120" V 6150 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6080 4350 50  0001 C CNN
+F 3 "" H 6150 4350 50  0001 C CNN
+	1    6150 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5B91CADC
+P 6150 4800
+F 0 "R3" V 6230 4800 50  0000 C CNN
+F 1 "1k" V 6150 4800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6080 4800 50  0001 C CNN
+F 3 "" H 6150 4800 50  0001 C CNN
+	1    6150 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR015
+U 1 1 5B91CE4A
+P 8150 5050
+F 0 "#PWR015" H 8150 4900 50  0001 C CNN
+F 1 "VCC" H 8150 5200 50  0000 C CNN
+F 2 "" H 8150 5050 50  0001 C CNN
+F 3 "" H 8150 5050 50  0001 C CNN
+	1    8150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5B91CF66
+P 6650 2450
+F 0 "D1" H 6650 2550 50  0000 C CNN
+F 1 "LED" H 6650 2350 50  0000 C CNN
+F 2 "LEDs:LED_1206_HandSoldering" H 6650 2450 50  0001 C CNN
+F 3 "" H 6650 2450 50  0001 C CNN
+	1    6650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5B91D079
+P 7000 2450
+F 0 "R4" V 7080 2450 50  0000 C CNN
+F 1 "470" V 7000 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6930 2450 50  0001 C CNN
+F 3 "" H 7000 2450 50  0001 C CNN
+	1    7000 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 5B91D4D5
+P 7700 3250
+F 0 "BT1" H 7800 3350 50  0000 L CNN
+F 1 "Battery" H 7800 3250 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 7700 3310 50  0001 C CNN
+F 3 "" V 7700 3310 50  0001 C CNN
+	1    7700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 5B91D6FF
+P 7250 3550
+F 0 "#PWR016" H 7250 3300 50  0001 C CNN
+F 1 "GND" H 7250 3400 50  0000 C CNN
+F 2 "" H 7250 3550 50  0001 C CNN
+F 3 "" H 7250 3550 50  0001 C CNN
+	1    7250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Thermistor_NTC TH1
+U 1 1 5B91D858
+P 7700 3900
+F 0 "TH1" V 7525 3900 50  0000 C CNN
+F 1 "10K" V 7825 3900 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" H 7700 3950 50  0001 C CNN
+F 3 "" H 7700 3950 50  0001 C CNN
+	1    7700 3900
+	1    0    0    -1  
+$EndComp
+Text HLabel 8050 3500 2    60   Output ~ 0
+V-
+Text HLabel 8050 3000 2    60   Output ~ 0
+V+
+$Comp
+L C C3
+U 1 1 5B9982FE
+P 6350 3900
+F 0 "C3" H 6375 4000 50  0000 L CNN
+F 1 "0.22uF" H 6375 3800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6388 3750 50  0001 C CNN
+F 3 "" H 6350 3900 50  0001 C CNN
+	1    6350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5B9983FC
+P 4300 4150
+F 0 "C2" H 4325 4250 50  0000 L CNN
+F 1 "0.1uF" H 4325 4050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4338 4000 50  0001 C CNN
+F 3 "" H 4300 4150 50  0001 C CNN
+	1    4300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5B99862A
+P 7250 3200
+F 0 "C4" H 7275 3300 50  0000 L CNN
+F 1 "1uF" H 7275 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7288 3050 50  0001 C CNN
+F 3 "" H 7250 3200 50  0001 C CNN
+	1    7250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP3
+U 1 1 5B9992E7
+P 8000 4600
+F 0 "TP3" H 8000 4900 50  0000 C BNN
+F 1 "APG" H 8000 4850 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 8000 4600 50  0001 C CNN
+F 3 "" H 8000 4600 50  0001 C CNN
+	1    8000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 5BA00C1E
+P 8150 6050
+F 0 "#PWR017" H 8150 5800 50  0001 C CNN
+F 1 "GND" H 8150 5900 50  0000 C CNN
+F 2 "" H 8150 6050 50  0001 C CNN
+F 3 "" H 8150 6050 50  0001 C CNN
+	1    8150 6050
+	1    0    0    -1  
+$EndComp
+Text Label 6200 3650 0    60   ~ 0
+CR
+$Comp
+L Jumper JP1
+U 1 1 5BA00EC7
+P 7650 5250
+F 0 "JP1" H 7650 5400 50  0000 C CNN
+F 1 "Jumper" H 7650 5170 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7650 5250 50  0001 C CNN
+F 3 "" H 7650 5250 50  0001 C CNN
+	1    7650 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper JP2
+U 1 1 5BA00FCC
+P 7650 5600
+F 0 "JP2" H 7650 5750 50  0000 C CNN
+F 1 "Jumper" H 7650 5520 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7650 5600 50  0001 C CNN
+F 3 "" H 7650 5600 50  0001 C CNN
+	1    7650 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper JP3
+U 1 1 5BA01026
+P 7650 5950
+F 0 "JP3" H 7650 6100 50  0000 C CNN
+F 1 "Jumper" H 7650 5870 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7650 5950 50  0001 C CNN
+F 3 "" H 7650 5950 50  0001 C CNN
+	1    7650 5950
+	1    0    0    -1  
+$EndComp
+Text Label 6600 3550 2    60   ~ 0
+TMRSEL
+Text Label 6850 5250 0    60   ~ 0
+TMRSEL
+Text Label 6850 5600 0    60   ~ 0
+TMRSEL
+Text Label 6850 5950 0    60   ~ 0
+TMRSEL
+Text Label 8800 5600 2    60   ~ 0
+CR
+$Comp
+L C C9
+U 1 1 5BA01AAE
+P 8300 5600
+F 0 "C9" H 8325 5700 50  0000 L CNN
+F 1 "10pF" H 8325 5500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8338 5450 50  0001 C CNN
+F 3 "" H 8300 5600 50  0001 C CNN
+	1    8300 5600
+	0    -1   -1   0   
+$EndComp
+Text Notes 3550 1300 0    118  ~ 24
+INTEGRADO CARGADOR DE BATERÍAS DE LI-ION
+Text Notes 5350 1600 0    79   ~ 0
+BQ2004
+Text Notes 4150 6950 0    79   ~ 0
+Nota:\nLos pines que no aparecen no se conectan.
+Text Notes 650  7150 0    60   ~ 0
+FLOATING(1)\nLOW\nHIGH
+Text Notes 2550 7150 0    60   ~ 0
+3 hs\n6 hs\n4.5 hs
+Text Notes 950  6750 0    60   ~ 0
+TMR SEL
+Text Notes 2500 6750 0    60   ~ 0
+TIEMPO DE CARGA
+Text Notes 600  7500 0    60   ~ 0
+(1) Para mejorar la inmunidad al ruido, se recomienda que un mínimo\nEl capacitor de 10 pF debe estar conectado a Vss en un pin flotante.
+Text Notes 550  6600 0    60   ~ 12
+USO DE JUMPERS
+Text Notes 6800 5100 0    60   ~ 12
+HIGH
+Text Notes 6800 5500 0    60   ~ 12
+FLOATING(1)
+Text Notes 6800 5800 0    60   ~ 12
+LOW
 Wire Wire Line
 	3650 2800 3650 3250
 Wire Wire Line
@@ -210,28 +437,6 @@ Wire Wire Line
 	4950 3350 4800 3350
 Wire Wire Line
 	6150 3650 6150 4200
-$Comp
-L R R2
-U 1 1 5B91CA6F
-P 6150 4350
-F 0 "R2" V 6230 4350 50  0000 C CNN
-F 1 "120" V 6150 4350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6080 4350 50  0001 C CNN
-F 3 "" H 6150 4350 50  0001 C CNN
-	1    6150 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R3
-U 1 1 5B91CADC
-P 6150 4800
-F 0 "R3" V 6230 4800 50  0000 C CNN
-F 1 "1k" V 6150 4800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6080 4800 50  0001 C CNN
-F 3 "" H 6150 4800 50  0001 C CNN
-	1    6150 4800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6150 5000 6150 4950
 Wire Wire Line
@@ -246,47 +451,14 @@ Wire Wire Line
 Connection ~ 6150 3650
 Wire Wire Line
 	6350 4150 6350 4050
-$Comp
-L VCC #PWR015
-U 1 1 5B91CE4A
-P 7800 5050
-F 0 "#PWR015" H 7800 4900 50  0001 C CNN
-F 1 "VCC" H 7800 5200 50  0000 C CNN
-F 2 "" H 7800 5050 50  0001 C CNN
-F 3 "" H 7800 5050 50  0001 C CNN
-	1    7800 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 3450 6050 3450
 Wire Wire Line
 	6250 2450 6250 3450
-$Comp
-L LED D1
-U 1 1 5B91CF66
-P 6650 2450
-F 0 "D1" H 6650 2550 50  0000 C CNN
-F 1 "LED" H 6650 2350 50  0000 C CNN
-F 2 "LEDs:LED_1206_HandSoldering" H 6650 2450 50  0001 C CNN
-F 3 "" H 6650 2450 50  0001 C CNN
-	1    6650 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 2450 6500 2450
 Wire Wire Line
 	6800 2450 6850 2450
-$Comp
-L R R4
-U 1 1 5B91D079
-P 7000 2450
-F 0 "R4" V 7080 2450 50  0000 C CNN
-F 1 "470" V 7000 2450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6930 2450 50  0001 C CNN
-F 3 "" H 7000 2450 50  0001 C CNN
-	1    7000 2450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7150 2450 7200 2450
 Wire Wire Line
@@ -313,199 +485,59 @@ Wire Wire Line
 Wire Wire Line
 	7250 3350 7250 3550
 Connection ~ 7250 3500
-$Comp
-L Battery BT1
-U 1 1 5B91D4D5
-P 7700 3250
-F 0 "BT1" H 7800 3350 50  0000 L CNN
-F 1 "Battery" H 7800 3250 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 7700 3310 50  0001 C CNN
-F 3 "" V 7700 3310 50  0001 C CNN
-	1    7700 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7700 3000 7700 3050
 Wire Wire Line
 	7700 3450 7700 3750
-$Comp
-L GND #PWR016
-U 1 1 5B91D6FF
-P 7250 3550
-F 0 "#PWR016" H 7250 3300 50  0001 C CNN
-F 1 "GND" H 7250 3400 50  0000 C CNN
-F 2 "" H 7250 3550 50  0001 C CNN
-F 3 "" H 7250 3550 50  0001 C CNN
-	1    7250 3550
-	1    0    0    -1  
-$EndComp
 Connection ~ 7700 3500
-$Comp
-L Thermistor_NTC TH1
-U 1 1 5B91D858
-P 7700 3900
-F 0 "TH1" V 7525 3900 50  0000 C CNN
-F 1 "10K" V 7825 3900 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" H 7700 3950 50  0001 C CNN
-F 3 "" H 7700 3950 50  0001 C CNN
-	1    7700 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7700 4600 7700 4050
 Connection ~ 7700 3000
-Text HLabel 8050 3500 2    60   Output ~ 0
-V-
-Text HLabel 8050 3000 2    60   Output ~ 0
-V+
-$Comp
-L C C3
-U 1 1 5B9982FE
-P 6350 3900
-F 0 "C3" H 6375 4000 50  0000 L CNN
-F 1 "0.22uF" H 6375 3800 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6388 3750 50  0001 C CNN
-F 3 "" H 6350 3900 50  0001 C CNN
-	1    6350 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C2
-U 1 1 5B9983FC
-P 4300 4150
-F 0 "C2" H 4325 4250 50  0000 L CNN
-F 1 "0.1uF" H 4325 4050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4338 4000 50  0001 C CNN
-F 3 "" H 4300 4150 50  0001 C CNN
-	1    4300 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C4
-U 1 1 5B99862A
-P 7250 3200
-F 0 "C4" H 7275 3300 50  0000 L CNN
-F 1 "1uF" H 7275 3100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7288 3050 50  0001 C CNN
-F 3 "" H 7250 3200 50  0001 C CNN
-	1    7250 3200
-	1    0    0    -1  
-$EndComp
 Connection ~ 7700 4600
-$Comp
-L TEST TP3
-U 1 1 5B9992E7
-P 8000 4600
-F 0 "TP3" H 8000 4900 50  0000 C BNN
-F 1 "APG" H 8000 4850 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 8000 4600 50  0001 C CNN
-F 3 "" H 8000 4600 50  0001 C CNN
-	1    8000 4600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6050 3100 6150 3100
 Wire Wire Line
 	6050 3650 6350 3650
-$Comp
-L GND #PWR017
-U 1 1 5BA00C1E
-P 7800 6050
-F 0 "#PWR017" H 7800 5800 50  0001 C CNN
-F 1 "GND" H 7800 5900 50  0000 C CNN
-F 2 "" H 7800 6050 50  0001 C CNN
-F 3 "" H 7800 6050 50  0001 C CNN
-	1    7800 6050
-	1    0    0    -1  
-$EndComp
-Text Label 6200 3650 0    60   ~ 0
-CR
-$Comp
-L Jumper JP1
-U 1 1 5BA00EC7
-P 7300 5250
-F 0 "JP1" H 7300 5400 50  0000 C CNN
-F 1 "Jumper" H 7300 5170 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7300 5250 50  0001 C CNN
-F 3 "" H 7300 5250 50  0001 C CNN
-	1    7300 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper JP2
-U 1 1 5BA00FCC
-P 7300 5600
-F 0 "JP2" H 7300 5750 50  0000 C CNN
-F 1 "Jumper" H 7300 5520 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7300 5600 50  0001 C CNN
-F 3 "" H 7300 5600 50  0001 C CNN
-	1    7300 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper JP3
-U 1 1 5BA01026
-P 7300 5950
-F 0 "JP3" H 7300 6100 50  0000 C CNN
-F 1 "Jumper" H 7300 5870 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7300 5950 50  0001 C CNN
-F 3 "" H 7300 5950 50  0001 C CNN
-	1    7300 5950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6050 3550 6600 3550
-Text Label 6600 3550 2    60   ~ 0
-TMRSEL
-Text Label 6500 5250 0    60   ~ 0
-TMRSEL
-Text Label 6500 5600 0    60   ~ 0
-TMRSEL
-Text Label 6500 5950 0    60   ~ 0
-TMRSEL
 Wire Wire Line
-	7000 5250 6500 5250
+	7350 5250 6850 5250
 Wire Wire Line
-	7000 5600 6500 5600
+	7350 5600 6850 5600
 Wire Wire Line
-	7000 5950 6500 5950
+	7350 5950 6850 5950
 Wire Wire Line
-	7600 5250 7800 5250
+	7950 5250 8150 5250
 Wire Wire Line
-	7800 5250 7800 5050
+	8150 5250 8150 5050
 Wire Wire Line
-	7600 5600 7800 5600
+	7950 5600 8150 5600
 Wire Wire Line
-	7600 5950 7800 5950
+	7950 5950 8150 5950
 Wire Wire Line
-	7800 5950 7800 6050
-Text Label 8450 5600 2    60   ~ 0
-CR
-$Comp
-L C C9
-U 1 1 5BA01AAE
-P 7950 5600
-F 0 "C9" H 7975 5700 50  0000 L CNN
-F 1 "10pF" H 7975 5500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7988 5450 50  0001 C CNN
-F 3 "" H 7950 5600 50  0001 C CNN
-	1    7950 5600
-	0    -1   -1   0   
-$EndComp
+	8150 5950 8150 6050
 Wire Wire Line
-	8100 5600 8450 5600
-Text Notes 3550 1300 0    118  ~ 24
-INTEGRADO CARGADOR DE BATERÍAS DE LI-ION
-Text Notes 5350 1600 0    79   ~ 0
-BQ2004
-Text Notes 1000 6750 0    79   ~ 0
-Nota:\nLos pines que no aparecen no se conectan.
+	8450 5600 8800 5600
 Wire Notes Line
-	900  6450 3700 6450
+	4050 6650 6850 6650
 Wire Notes Line
-	3700 6450 3700 6900
+	6850 6650 6850 7100
 Wire Notes Line
-	3700 6900 900  6900
+	6850 7100 4050 7100
 Wire Notes Line
-	900  6900 900  6450
+	4050 7100 4050 6650
+Wire Notes Line
+	550  6650 4000 6650
+Wire Notes Line
+	4000 6650 4000 7550
+Wire Notes Line
+	4000 7550 550  7550
+Wire Notes Line
+	550  7550 550  6650
+Wire Notes Line
+	550  6750 4000 6750
+Wire Notes Line
+	550  7250 4000 7250
+Wire Notes Line
+	1850 6650 1850 7250
 $EndSCHEMATC

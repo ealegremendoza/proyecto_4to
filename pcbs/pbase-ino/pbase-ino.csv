@@ -1,5 +1,4 @@
 Count:,31,,,,
-Components:,,,,,
 Item,Qty,Ref,Value,LibPart,Footprint
 ,1,C1,1uF x 16V,CP,C SMD:CP_Tantalum_Case-A_EIA-3216-18
 ,1,C2,100n,C,Capacitors_SMD:C_0805
@@ -24,3 +23,18 @@ Item,Qty,Ref,Value,LibPart,Footprint
 ,1,U2,acc_mpu9250_board,acc_mpu9250_board,mpu9250_board
 ,1,,GPS_EM506,gps em506,gps em506
 ,1,XA1,Arduino_Mega2560_Shield,arduino:Arduino_Mega2560_Shield,Arduino_Mega2560_Shield_flippedONtop
+,,,,,
+,,,,,
+"(*) De no conseguir LM2575-3.3V Un buen reemplazo es el LM2596-3.3V que tiene el mismo circuito, pero con diferentes valores de componentes.",,,,,
+,1,U3,LM2596-3.3V ,TO-263,
+,1,L1 ,47uH ,Radial pitch 5mm THT,PK0707. CODIGO ELEMON: FI1535090
+,1,D1 ,1N5817 / 1N15819 / 1N5822,D_Schottky,Axial. Cualquiera de los 3: 1N5817 / 1N15819 / 1N5822 . THT 
+,2,"C5,C8",330uFx16V,,"Capacitors_SMD:CP_Elec_6.3x5.3 (o sino 6.3x7.7, 8x10, 8x10.5)"
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,, ,
